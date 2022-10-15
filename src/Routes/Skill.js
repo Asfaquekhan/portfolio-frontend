@@ -7,19 +7,19 @@ export default function Skill() {
       <nav>
         <ul className='skill'>
           <div>
-         <li><a href=""><img src=".\Images\html.png" alt="" width={50}/></a><p className='html'>HTML &lt;h3&gt; used for the "SKILLS" heading.&lt;ul&gt;,&lt;li&gt; used for listing the elements and &lt;img&gt; used for adding the icon.&lt;p&gt; used to write here</p></li>
+         <li><img src=".\Images\html.png" alt="" width={50}/><p className='html'>HTML &lt;h3&gt; used for the "SKILLS" heading.&lt;ul&gt;,&lt;li&gt; used for listing the elements and &lt;img&gt; used for adding the icon.&lt;p&gt; used to write here</p></li>
          
          </div>
          <div>
-         <li><a href=""><img src=".\Images\css.png" alt="" width={50}/></a><p>CSS - border-radius,border,width , display,justify-containt used for creating this container. hover used for the effect</p></li>
+         <li><img src=".\Images\css.png" alt="" width={50}/><p>CSS - border-radius,border,width , display,justify-containt used for creating this container. hover used for the effect</p></li>
          
          </div>
          <div>
-         <li><a href=""><img src=".\Images\javascript.png" alt="" width={50}/></a><p>JAVASCRIPT - Returning this Whole jSX under a function & exporting it back to the main js file, and also importing it in the main js file</p></li>
+         <li><img src=".\Images\javascript.png" alt="" width={50}/><p>JAVASCRIPT - Returning this Whole jSX under a function & exporting it back to the main js file, and also importing it in the main js file</p></li>
          
          </div>
          <div>
-         <li><a href=""><img src=".\Images\react.png" alt="" width={50}/></a><p>REACT - Used import React from 'React' to write JSX and export default to export the function to the main JS file</p></li>
+         <li><img src=".\Images\react.png" alt="" width={50}/><p>REACT - Used import React from 'React' to write JSX and export default to export the function to the main JS file</p></li>
          
          </div>
          <div>

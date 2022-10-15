@@ -7,7 +7,6 @@ import {Route,Routes} from 'react-router-dom'
 import Skill from './Routes/Skill';
 import About from './Routes/About';
 import Main from './Routes/Main';
-import ThemeContext from './component/Context';
 function App(props) {
   return(
  <div>
