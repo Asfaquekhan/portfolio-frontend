@@ -6,7 +6,7 @@ export default function Main(props) {
     <>
     <div className='main'>
       <h2>Hi,I'm Asfaque </h2>
-      <p>Welcome to my website</p>
+      <p>Welcome to my website!</p>
      
       <div>
         <ul className='resume'>
