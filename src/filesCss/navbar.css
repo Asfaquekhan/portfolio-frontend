@@ -1,0 +1,46 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-top: 10px;
+    min-height: 10vh;
+    position: sticky;
+    top: 0%;
+    
+}
+.header p{
+    text-decoration: none;
+    font-size: large;
+    margin-top: 11px;
+}
+
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    padding-top: 12px;
+}
+.nav-menu li{
+    
+    text-decoration: none;
+    margin-right: 60px;
+   
+
+}
+.icon{
+    margin-right:15px;
+    
+}
+
+
+#light{
+    background-color:white;
+    color: black;
+    font-size: large;
+}
+#dark{
+    background-color: #121212;
+    color: white;
+    font-size: large;
+}
