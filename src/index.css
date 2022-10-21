@@ -1,12 +1,7 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *{
-  margin: 0%;
-  padding: 0%;
-  list-style: none;
- 
-  font-family: 'poppins', sans-serif;
-}
-a{
-  text-decoration: none;
-  text-decoration: inherit;
+  margin: 0;
+  padding: 0;
 }

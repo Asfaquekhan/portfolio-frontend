@@ -1,5 +1,4 @@
 import React from 'react'
-import '../filesCss/footer.css'
 import {BsLinkedin} from "react-icons/bs"
 import {BsGithub} from "react-icons/bs"
 import {AiOutlineMail} from "react-icons/ai"

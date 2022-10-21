@@ -1,5 +1,5 @@
 import React from "react";
-import "../filesCss/skill.css";
+
 export default function Skill() {
   return (
     <div>

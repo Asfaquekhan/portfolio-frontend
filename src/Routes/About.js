@@ -1,5 +1,5 @@
 import React from "react";
-import "../filesCss/about.css";
+
 
 export default function About(props) {
   const greet = new Date().getHours();

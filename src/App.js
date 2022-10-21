@@ -7,6 +7,8 @@ import {Route,Routes} from 'react-router-dom'
 import Skill from './Routes/Skill';
 import About from './Routes/About';
 import Main from './Routes/Main';
+
+
 function App(props) {
   return(
  <div>
