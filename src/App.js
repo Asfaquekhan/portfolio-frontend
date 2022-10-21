@@ -8,11 +8,10 @@ import Skill from './Routes/Skill';
 import About from './Routes/About';
 import Main from './Routes/Main';
 
-
 function App(props) {
+ 
   return(
  <div>
-  
   <Navbar/>
   <Routes >
   <Route path='/' element={<Main/>}/>
