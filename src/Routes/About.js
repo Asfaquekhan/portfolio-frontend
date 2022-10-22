@@ -13,27 +13,28 @@ export default function About(props) {
   }
   return (
     <>
-      <div className="about">
-        <img src=".\Images\IMG_20221013_181332.jpg" alt="" className="photo" />
-        <div className="about-write">
-          <p className="Question">
+    <h1 className="text-center text-3xl">About me</h1>
+      <div className="flex h-full max-w-[900px] mx-auto justify-between items-center py-8">
+  
+        <img src=".\Images\about.jpg " alt="" className="rounded-full" width={320} />
+       
+        <div className="leading-8">
+          <p className="text-xl font-bold ">
             Hi,<span>{setgreet}!</span> Hope you having a great day
           </p>
-          <p>
-             My name is Asfaque khan. </p>
-             <p className="aboutex">i'm 24 year old aspiring web
+             <p className="">My name is Asfaque khan.i'm 24 year old aspiring frontend
             devloper.Currenly working as a mechanical engineer in Reshmi
             metaliks.
             </p>
           <hr />
-          <p className="Question">
+          <p className="text-xl font-bold">
             why this mechanical guy with a web portfolio?
           </p>
-          <p className="aboutex">
+          <p className="">
             From college days i was passonate about coding.I love how it gives a
             free path for creativity & automate things.
           </p>
-          <p className="aboutex">
+          <p className="">
             So here i'm coming crawling from tutorial hell with a portfolio and
             some projects using html css javascript react.
           </p>

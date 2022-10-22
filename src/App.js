@@ -7,11 +7,23 @@ import {Route,Routes} from 'react-router-dom'
 import Skill from './Routes/Skill';
 import About from './Routes/About';
 import Main from './Routes/Main';
+import { useState } from 'react';
+
 
 function App(props) {
- 
+ const [mode,setmode]=useState("light");
+ const toggle=()=>{
+  if(mode ==="light"){
+    setmode("dark")
+  }
+  else{
+    setmode("light")
+  }
+ }
   return(
- <div>
+ <div className={mode}>
+
+  <p onClick={toggle} className='absolute my-7 mx-48'>mode</p>
   <Navbar/>
   <Routes >
   <Route path='/' element={<Main/>}/>
