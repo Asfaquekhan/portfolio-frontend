@@ -8,7 +8,7 @@ import Skill from './Routes/Skill';
 import About from './Routes/About';
 import Main from './Routes/Main';
 import { useState } from 'react';
-
+import {CgDarkMode} from 'react-icons/cg'
 
 function App(props) {
  const [mode,setmode]=useState("light");
@@ -23,7 +23,7 @@ function App(props) {
   return(
  <div className={mode}>
 
-  <p onClick={toggle} className='absolute my-7 mx-48'>mode</p>
+  <p onClick={toggle} className='absolute my-7 mx-48'><CgDarkMode size={25}/></p>
   <Navbar/>
   <Routes >
   <Route path='/' element={<Main/>}/>

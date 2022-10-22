@@ -20,7 +20,7 @@ export default function Navbar() {
       <nav>
         <ul className="hidden md:flex text-xl">
           
-            <li className="flex items-center px-10 bg-blue-500 rounded hover:bg-white transition-all">
+            <li className="flex items-center px-10">
             <BsDownload className="mx-2"/>
              <a href="https://drive.google.com/u/0/uc?id=1FjiPUuhKStIUTXyHPdL-1pwM8hKwwkIi&export=download">Resume</a>
             </li>

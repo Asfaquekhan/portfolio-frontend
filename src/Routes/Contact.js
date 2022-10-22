@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className="max-w-[900px] mx-auto">
+    <div className="max-w-[900px] mx-auto h-screen">
       <p className="text-center text-xl ">Contact me</p>
       <form action="https://formspree.io/f/xdojlvew" method="POST">
         <label className="my-12">

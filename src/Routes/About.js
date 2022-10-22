@@ -12,9 +12,9 @@ export default function About(props) {
     setgreet = "Good Evening";
   }
   return (
-    <>
+    <div className="h-screen">
     <h1 className="text-center text-3xl">About me</h1>
-      <div className="flex h-full max-w-[900px] mx-auto justify-between items-center py-8">
+      <div className="md:flex h-full max-w-[900px] mx-auto justify-between items-center py-8">
   
         <img src=".\Images\about.jpg " alt="" className="rounded-full" width={320} />
        
@@ -41,6 +41,6 @@ export default function About(props) {
           <p></p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
