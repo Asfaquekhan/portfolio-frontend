@@ -14,29 +14,31 @@ export default function Navbar() {
   return (
     <div className="flex py-3 h-20 max-w-[1240px] mx-auto justify-between items-center">
       <Link to="/">
-        <p className="text-2xl px-10">Home</p>
+        <p className="text-2xl px-10 hover:underline">Home</p>
       </Link>
 
       <nav>
-        <ul className="hidden md:flex text-xl">
-          
-            <li className="flex items-center px-10">
-            <BsDownload className="mx-2"/>
-             <a href="https://drive.google.com/u/0/uc?id=1FjiPUuhKStIUTXyHPdL-1pwM8hKwwkIi&export=download">Resume</a>
-            </li>
-          
-          <Link to="/about">
-            <li className="flex items-center px-10">
+        <ul className="hidden md:flex text-lg">
+        <Link to="/about">
+            <li className="flex items-center px-5 mx-4 hover:underline">
               {" "}
               <BiMessageDots className="mx-2" /> About
             </li>
           </Link>
-          <Link to="/contact">
-            <li className="flex items-center px-10">
+        <Link to="/contact">
+            <li className="flex items-center px-5 mx-4 hover:underline">
               <AiOutlineContacts className="mx-2" />
               Contact
             </li>
           </Link>
+          
+            <li className="flex items-center px-5 mx-4 bg-slate-900 text-white rounded py-0">
+            <BsDownload className="mx-2"/>
+             <a href="https://drive.google.com/u/0/uc?id=1FjiPUuhKStIUTXyHPdL-1pwM8hKwwkIi&export=download">Resume</a>
+            </li>
+          
+         
+          
          
         </ul>
       </nav>

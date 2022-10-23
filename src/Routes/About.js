@@ -16,7 +16,7 @@ export default function About(props) {
     <h1 className="text-center text-3xl">About me</h1>
       <div className="md:flex h-full max-w-[900px] mx-auto justify-between items-center py-8">
   
-        <img src=".\Images\about.jpg " alt="" className="rounded-full" width={320} />
+        <img src=" " alt="" className="rounded-full" width={320} />
        
         <div className="leading-8">
           <p className="text-xl font-bold ">
