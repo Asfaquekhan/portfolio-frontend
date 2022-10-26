@@ -21,7 +21,7 @@ export default function Redirect() {
     }
   return (
     <div className='fixed bottom-4 right-4 text-white bg-slate-900 rounded-full'>
-        {backtotop &&(<button className=' py-1 px-1' onClick={scrollup}><AiOutlineArrowUp/></button>)}
+        {backtotop &&(<button className=' py-2 px-2' onClick={scrollup}><AiOutlineArrowUp/></button>)}
     </div>
   )
 }

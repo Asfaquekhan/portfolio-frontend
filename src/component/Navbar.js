@@ -8,17 +8,29 @@ import { useState } from "react";
 
 
 
+
 export default function Navbar() {
-  
+
  
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
-  };
+  }
+  const [color,setcolor]=useState(false)
+  const changenav=()=>{
+    if(window.scrollY>=90){
+      setcolor(true)
+       }
+       else{
+         setcolor(false)
+       }
+  }
+ 
+    window.addEventListener("scroll",changenav)
   return (
-    <div className="flex py-3 h-20 max-w-[1240px] mx-auto justify-between items-center">
+    <div className="sticky top-0 flex py-3 h-20 max-w-screen mx-auto justify-between items-center" style={color?{backgroundColor:"black",color:"white"}:{color:"black"}} >
       <div >
-        <ul className="flex space-x-3">
+        <ul className="flex mx-4">
       <Link to="/">
         <li className="text-2xl">Home </li>
         </Link>

@@ -12,7 +12,7 @@ export default function About(props) {
     setgreet = "Good Evening";
   }
   return (
-    <div className="h-screen">
+    <div className="min-h-screen">
     <h1 className="text-center text-3xl">About me</h1>
       <div className="md:flex h-full max-w-[900px] mx-auto justify-between items-center py-8">
   
@@ -22,9 +22,7 @@ export default function About(props) {
           <p className="text-xl font-bold ">
             Hi,<span>{setgreet}!</span> Hope you having a great day
           </p>
-             <p className="">My name is Asfaque khan.i'm 24 year old aspiring frontend
-            devloper.Currenly working as a mechanical engineer in Reshmi
-            metaliks.
+             <p className="">My name is Asfaque khan.i'm 24 year self-taught aspiring frontend web devloaper
             </p>
           <hr />
           <p className="text-xl font-bold">
