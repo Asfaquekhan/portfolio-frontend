@@ -5,18 +5,29 @@ import { Link } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import {BsDownload} from 'react-icons/bs'
 import { useState } from "react";
+import { useContext } from "react";
+import notecontext from "../contextapi/NoteContext";
+import { CgDarkMode } from "react-icons/cg";
 
 export default function Navbar() {
+  const names =useContext(notecontext)
+  names.toggle();
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
   };
   return (
     <div className="flex py-3 h-20 max-w-[1240px] mx-auto justify-between items-center">
+      <div >
+        <ul className="flex space-x-3">
       <Link to="/">
-        <p className="text-2xl px-10 hover:underline">Home</p>
-      </Link>
-
+        <li className="text-2xl">Home </li>
+        </Link>
+        <li onClick={names.toggle} className='items-center flex'><CgDarkMode size={25}/></li>
+    
+      
+      </ul>
+      </div>
       <nav>
         <ul className="hidden md:flex text-lg">
         <Link to="/about">

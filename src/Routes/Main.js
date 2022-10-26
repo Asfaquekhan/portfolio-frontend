@@ -12,7 +12,7 @@ import Contact from './Contact'
 export default function Main(props) {
   return (
     <>
-    <div className='flex max-w-[950px] w-full h-screen mx-auto py-6'>
+    <div className='flex max-w-[950px] w-full max-h-fit mx-auto py-6'>
       <div>
        <img src=".\Images\IMG_20221013_181332.jpg" alt="" width={240} className='rounded-full'/>
 

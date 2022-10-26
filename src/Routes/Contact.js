@@ -27,17 +27,17 @@ export default function Contact() {
   };
   return (
     <>
-      <h1 className="text-center text-3xl my-4">Contact(HireMe);</h1>
-      <div className=" md:flex max-w-[950px] w-full h-screen mx-auto justify-between">
-        <div className="">
+      <h1 className="text-center text-3xl my-4">Contact("Hire me");</h1>
+      <div className=" md:flex max-w-[950px] w-full max-h-fit mx-auto justify-between">
+        <div className="grid grid-cols-2">
           <form ref={form} onSubmit={sendEmail} className="">
-            <label className="bg-slate-900 text-white rounded px-5 py-1 mx-5">
+            <label className="bg-slate-900 text-white rounded py-1 px-5 mx-5" >
               Name
             </label>
             <input
               type="text"
               name="user_name"
-              className="my-5 py-1 mx-5 px-12 md:px-24"
+              className="my-5 py-1 mx-5 border border-slate-900 rounded "
               placeholder="Your Name"
             />
             <br />
@@ -47,23 +47,24 @@ export default function Contact() {
             <input
               type="email"
               name="user_email"
-              className="my-5 py-1 mx-5 px-12 md:px-24"
+              className="my-5 py-1 mx-5 border border-slate-900 rounded  "
               placeholder="Your Email id"
             />
             <br />
             <label className="bg-slate-900 text-white rounded px-5 py-1 mx-5">
               Message
             </label>
+            <br />
             <textarea
               name="message"
               placeholder="Your message"
-              className="px-12 md:px-24"
+              className="my-5 py-1 mx-5 border border-slate-900 rounded " rows={12} cols={30}
             />
             <br />
             <input
               type="submit"
               value="Send"
-              className="my-5 mx-5 bg-blue-500 text-white border-slate-900 px-8 py-2 rounded"
+              className="bg-slate-900 text-white rounded px-5 py-1 mx-5"
             />
           </form>
         </div>
@@ -89,7 +90,7 @@ export default function Contact() {
           </button>
           <br />
           <button className="my-5">
-            <a href="https://wa.me/7001652818" className="flex items-center">
+            <a href="https://wa.me/7001652818" className="flex items-center bg-slate-900 text-white rounded">
               <BsWhatsapp className="mx-4" size={20} />
               Whatsapp +917001652818
             </a>
