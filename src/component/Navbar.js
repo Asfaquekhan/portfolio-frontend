@@ -5,13 +5,11 @@ import { Link } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import {BsDownload} from 'react-icons/bs'
 import { useState } from "react";
-import { useContext } from "react";
-import notecontext from "../contextapi/NoteContext";
-import { CgDarkMode } from "react-icons/cg";
+
+
 
 export default function Navbar() {
-  const names =useContext(notecontext)
-  names.toggle();
+  
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
@@ -23,8 +21,7 @@ export default function Navbar() {
       <Link to="/">
         <li className="text-2xl">Home </li>
         </Link>
-        <li onClick={names.toggle} className='items-center flex'><CgDarkMode size={25}/></li>
-    
+      
       
       </ul>
       </div>
