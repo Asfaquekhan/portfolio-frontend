@@ -58,7 +58,7 @@ export default function Contact() {
             <textarea
               name="message"
               placeholder="Your message"
-              className="my-5 py-1 mx-5 border border-slate-900 rounded " rows={12} cols={30}
+              className="my-5 py-1 mx-5 border border-slate-900 rounded "
             />
             <br />
             <input
