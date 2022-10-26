@@ -9,6 +9,7 @@ import About from './Routes/About';
 import Main from './Routes/Main';
 
 import NoteState from './contextapi/NoteState';
+import Redirect from './component/Redirect';
 
 function App(props) {
    
@@ -25,7 +26,7 @@ function App(props) {
   <Route path='/about' element={<About />}/>
   </Routes>
     <Footer/>
-    
+    <Redirect/>
    </div>
    </NoteState>
    </>
