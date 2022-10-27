@@ -18,7 +18,7 @@ export default function Navbar() {
   }
   const [color,setcolor]=useState(false)
   const changenav=()=>{
-    if(window.scrollY>=90){
+    if(window.scrollY>=70){
       setcolor(true)
        }
        else{
@@ -28,7 +28,7 @@ export default function Navbar() {
  
     window.addEventListener("scroll",changenav)
   return (
-    <div className="sticky top-0 flex py-3 h-20 max-w-screen mx-auto justify-between items-center" style={color?{backgroundColor:"black",color:"white"}:{color:"black"}} >
+    <div className="sticky top-0 flex h-12 max-w-screen mx-auto justify-between items-center z-50 backdrop-blur transition-colors duration-500 opacity-95" style={color?{backgroundColor:"black",color:"white"}:{color:"black"}} >
       <div >
         <ul className="flex mx-4">
       <Link to="/">
@@ -69,7 +69,7 @@ export default function Navbar() {
       <div
         className={
           !nav
-            ? "fixed left-[-100%]" : "md:hidden fixed left-0 top-0 w-[40%] text-black bg-white h-full ease-in-out duration-500 opacity-90"
+            ? "fixed left-[-100%]" : "md:hidden fixed left-0 top-0 w-[60%] h-screen text-white bg-slate-900 ease-in-out duration-500"
         }
       >
        

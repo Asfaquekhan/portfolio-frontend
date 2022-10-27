@@ -30,7 +30,7 @@ export default function Contact() {
   return (
     <>
       <h1 className="text-center text-3xl my-4">Contact("Hire me");</h1>
-      <div className=" md:flex max-w-[950px] w-full min-h-screen mx-auto justify-between ">
+      <div className=" md:flex max-w-[950px] w-full h-screen mx-auto justify-between ">
         <div className="">
           <form ref={form} onSubmit={sendEmail} className="">
            <div className="my-6 mx-9">
