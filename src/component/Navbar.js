@@ -25,8 +25,12 @@ export default function Navbar() {
          setcolor(false)
        }
   }
- 
+ const tounchnav=()=>{
+   console.log("hello")
+ }
     window.addEventListener("scroll",changenav)
+
+    window.addEventListener("touchstart",tounchnav)
   return (
     <div className="sticky top-0 flex h-12 max-w-screen mx-auto justify-between items-center z-50 backdrop-blur transition-colors duration-500 opacity-95" style={color?{backgroundColor:"black",color:"white"}:{color:"black"}} >
       <div >

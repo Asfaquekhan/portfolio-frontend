@@ -12,8 +12,8 @@ import Contact from './Contact'
 export default function Main(props) {
   return (
     <>
-    <div className='flex max-w-[950px] w-full h-screen mx-auto py-6'>
-      <div>
+    <div className='flex max-w-[950px] w-full h-screen mx-auto  py-16'>
+      <div className='mx-5'>
        <img src=".\Images\IMG_20221013_181332.jpg" alt="" width={240} className='rounded-full'/>
 
        <a href="https://github.com/Asfaquekhan">
@@ -31,7 +31,7 @@ export default function Main(props) {
           </Link>
        
       </div>
-      <div className='py-8 px-8'>
+      <div className='py-8 px-8 '>
         <h1 className='md:text-4xl text-xl '> &lt; Hi! My name is Asfaque Khan / &gt;</h1>
         <p className='py-3'>Aspiring Frontend web devloaper</p>
         <ul className=''>
