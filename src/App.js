@@ -1,35 +1,30 @@
-import Footer from './component/Footer';
-import Navbar from './component/Navbar';
-import './App.css';
-import Project from './Routes/Project';
-import Contact from './Routes/Contact';
-import {Route,Routes} from 'react-router-dom'
-import Skill from './Routes/Skill';
-import About from './Routes/About';
-import Main from './Routes/Main';
+import Footer from "./component/Footer";
+import Navbar from "./component/Navbar";
+import "./App.css";
+import Project from "./Routes/Project";
+import Contact from "./Routes/Contact";
 
-import NoteState from './contextapi/NoteState';
-import Redirect from './component/Redirect';
+import About from "./Routes/About";
+import Main from "./Routes/Main";
+
+import NoteState from "./contextapi/NoteState";
+import Redirect from "./component/Redirect";
 
 function App(props) {
-   
-  return(
+  return (
     <>
-    <NoteState>
- <div>
-  <Navbar/>
-  <Routes >
-  <Route path='/' element={<Main/>}/>
-  <Route path='/project' element={<Project/>}/>
-  <Route path='/contact' element={<Contact/>}/>
-  <Route path='/skill' element={<Skill/>}/>
-  <Route path='/about' element={<About />}/>
-  </Routes>
-    <Footer/>
-    <Redirect/>
-   </div>
-   </NoteState>
-   </>
+      <NoteState>
+        <div className=''>
+          <Navbar />
+          <Main  />
+          <Project />
+          <About />
+          <Contact />
+          <Footer />
+          <Redirect />
+        </div>
+      </NoteState>
+    </>
   );
 }
 

@@ -1,7 +1,9 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGithub,BsDownload } from "react-icons/bs";
 import { TextField } from "@mui/material";
+
+
 
 export default function Contact() {
 
@@ -29,7 +31,8 @@ export default function Contact() {
   };
   return (
     <>
-      <h1 className="text-center text-3xl my-4">Contact("Hire me");</h1>
+   
+      <h1 className="text-center text-3xl my-4" id="contact">Contact("Hire me");</h1>
       <div className=" md:flex max-w-[950px] w-full h-screen mx-auto justify-between ">
         <div className="">
           <form ref={form} onSubmit={sendEmail} className="">
@@ -60,27 +63,30 @@ export default function Contact() {
             />
           </form>
         </div>
-        <div className="my-5">
-          <button className="my-5 mx-5">
+        <div className="">
+          <div className="p-2 m-2">
             <a
               href="https://www.linkedin.com/in/asfaque-khan-359b39186/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BEyfAlF%2B9RT2r9WAgMf2C4Q%3D%3D"
               className="flex items-center "
             >
-              <BsGithub className="mx-4" size={20} />
+              <BsGithub className="mx-2" size={20} />
               Linkedin
             </a>
-          </button>
-          <br />
-          <button className="my-5 mx-5">
+          </div>
+          
+          <div className="p-2 m-2">
             <a
               href="https://github.com/Asfaquekhan"
               className="flex items-center"
             >
-              <BsLinkedin className="mx-4" size={20} />
+              <BsLinkedin className="mx-2" size={20} />
               github
             </a>
-          </button>
-          
+          </div>
+          <div className="text-center flex items-center p-2 m-20 text-indigo-100 transition-colors duration-150 bg-slate-900 rounded-lg focus:shadow-outline">
+           
+           <a href="https://drive.google.com/u/0/uc?id=1FjiPUuhKStIUTXyHPdL-1pwM8hKwwkIi&export=download" className="flex items-center "><BsDownload size={20} className='mx-2'/> Resume</a>
+          </div>
         </div>
       </div>
     </>
