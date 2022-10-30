@@ -3,8 +3,11 @@ import { AiOutlineContacts } from "react-icons/ai";
 import { BiMessageDots } from "react-icons/bi";
 import { Link } from "react-scroll";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { BsSun,BsMoonStars } from "react-icons/bs";
 import {MdOutlineWorkOutline} from 'react-icons/md'
 import { useState } from "react";
+
+
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -33,23 +36,32 @@ export default function Navbar() {
     })
   }
 
+  const[mode,setmode]=useState(false)
+  const theme =()=>{
+   setmode(!mode)
+  }
+
   return (
     <div
       className={
         !color
-          ? "sticky top-0 flex h-12 max-w-screen mx-auto justify-between items-center z-50 backdrop-blur transition-colors duration-500 opacity-95 shadow-2xl"
-          : "sticky top-0 flex h-12 max-w-screen mx-auto justify-between items-center z-50 backdrop-blur transition-colors duration-500 opacity-95 shadow-xl"
-      }
+          ? "sticky top-0 flex h-12 max-w-screen mx-auto justify-between items-center z-40 backdrop-blur transition-colors duration-500 opacity-95 shadow-2xl"
+          : "sticky top-0 flex h-12 max-w-screen mx-auto justify-between items-center z-40 backdrop-blur transition-colors duration-500 opacity-95 shadow-xl"
+      } 
     >
       <div>
         <ul className="flex mx-4">
+          <li><img src="https://cdn.shopify.com/shopifycloud/hatchful_web_two/bundles/4a14e7b2de7f6eaf5a6c98cb8c00b8de.png" alt="" width={30} className='rounded-full mx-4'/></li>
           <Link to="main" spy={true} smooth={true} offset={50} duration={500}>
-            <li className="text-2xl">&#123; A.K &#125;</li>
+            <li className="text-2xl">&lt;A.K&gt;</li>
           </Link>
+          
         </ul>
       </div>
       <nav>
         <ul className="hidden md:flex text-lg">
+        
+        <li className=" mx-3 border rounded-full" onClick={theme}>{mode?<BsSun className="mx-4 my-1" size={20}/>:<BsMoonStars className="mx-4 my-1" size={20}/>}</li>
             <li className="flex items-center px-3  mx-2  hover:bg-slate-900 hover:text-white hover:rounded-full" onClick={top}>
               <AiOutlineHome className="mx-2" />
               Home
@@ -91,8 +103,12 @@ export default function Navbar() {
           </Link>
         </ul>
       </nav>
+      <button className="md:hidden mx-3 border rounded-full" onClick={theme}>{mode?<BsSun className="mx-4 my-1" size={20}/>:<BsMoonStars className="mx-4 my-1" size={20}/>}</button>
+      
       <div onClick={handleNav} className="block md:hidden">
-        {!nav ? <AiOutlineMenu size={20} /> : <AiOutlineClose size={20} />}
+     
+        {!nav ? <AiOutlineMenu size={25} /> : <AiOutlineClose size={25} />}
+      
       </div>
       <div
         className={
