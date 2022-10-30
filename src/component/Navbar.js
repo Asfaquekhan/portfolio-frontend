@@ -7,9 +7,13 @@ import { BsSun,BsMoonStars } from "react-icons/bs";
 import {MdOutlineWorkOutline} from 'react-icons/md'
 import { useState } from "react";
 
+import { useFun, useMode } from "./Context/ThemeContext";
+
+
 
 
 export default function Navbar() {
+ 
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
@@ -36,10 +40,9 @@ export default function Navbar() {
     })
   }
 
-  const[mode,setmode]=useState(false)
-  const theme =()=>{
-   setmode(!mode)
-  }
+  const mode =useMode()
+  const theme =useFun()
+
 
   return (
     <div
@@ -113,8 +116,8 @@ export default function Navbar() {
       <div
         className={
           !nav
-            ? "fixed left-[-100%] min-h-screen ease-in-out duration-500"
-            : "md:hidden fixed left-0 top-0 w-[60%] h-screen text-white bg-slate-900 ease-in-out duration-500"
+            ? "fixed left-[-100%] top-0 w-[60%] min-h-screen text-white bg-slate-900 ease-in-out duration-500"
+            : "md:hidden fixed left-0 top-0 w-[60%] min-h-screen text-white bg-slate-900 ease-in-out duration-500"
         }
       >
         <ul className="">

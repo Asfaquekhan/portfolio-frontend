@@ -8,15 +8,18 @@ import About from "./Routes/About";
 import Main from "./Routes/Main";
 
 import Redirect from "./component/Redirect";
+import StateContext, {  useMode } from "./component/Context/ThemeContext";
 
 
 
 function App(props) {
-  
+  const mode=useMode()
+
   return (
     <>
-     <div className="darkmode">
+     <div className={mode?"light":"dark"}>
      
+     <StateContext>
         <Navbar />
         <Main />
         <Project />
@@ -24,7 +27,7 @@ function App(props) {
         <Contact />
         <Footer />
         <Redirect />
-       
+        </StateContext>
         </div>
     </>
   );

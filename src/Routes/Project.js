@@ -5,7 +5,7 @@ export default function Project() {
   return (
     <>
       <div className="mx-w-full min-h-fit p-4 m-2 " id="project">
-        <h1 className="text-center text-3xl animate__animated animate__flipInX">Projects</h1>
+        <h1 className="text-center text-3xl ">Projects</h1>
         <div className="md:grid grid-cols-2 gap-3 my-8">
           <section className="p-4 my-4 rounded-3xl shadow-md">
             <h1 className="text-center text-2xl">Project-1</h1>

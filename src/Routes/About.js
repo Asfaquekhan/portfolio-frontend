@@ -1,10 +1,11 @@
 import React from "react";
+import { useContext } from "react";
+import { ThemeContext } from "../component/Context/ThemeContext";
 
 
+export default function About(props) { 
 
-
-export default function About(props) {
-
+ const a = useContext(ThemeContext)
   const greet = new Date().getHours();
   let setgreet = "";
   if (greet < 12) {
@@ -16,7 +17,7 @@ export default function About(props) {
   }
   return (
     <div className="h-screen mx-5" id="about">
-    <h1 className="text-center text-3xl">About me</h1>
+    <h1 className="text-center text-3xl">About me{a}</h1>
       <div className="md:flex h-full max-w-[900px] mx-auto justify-between items-center py-8">
   
         <img src=" " alt="" className="rounded-full" width={320} />

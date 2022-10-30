@@ -7,12 +7,12 @@ import { Link } from "react-scroll";
 import { SiRedux } from "react-icons/si";
 import { MdWorkOutline } from "react-icons/md";
 import {DiCss3} from 'react-icons/di'
-import 'animate.css';
+
 export default function Main(props) {
   return (
     <>
       <div className="md:flex max-w-[950px]  mx-auto justify-between my-20">
-        <div className="h-screen md:w-1/2 space-y-10 animate__animated animate__bounceInLeft">
+        <div className="h-screen md:w-1/2 space-y-10 ">
           <h1 className="text-2xl m-3  ">Hi I'm Asfaque</h1>
           <p className="text-4xl m-3 flex">Frontend Web Devloper</p>
           <p className="my-10 m-3">
@@ -69,7 +69,7 @@ export default function Main(props) {
             </button>
           </div>
         </div>
-        <div className="md:my-16 animate__animated animate__bounceInRight">
+        <div className="md:my-16 ">
           
           <img
             src=".\Images\IMG_20221013_181332.jpg"
