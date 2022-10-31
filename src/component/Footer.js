@@ -41,7 +41,7 @@ export default function Footer() {
          
         </div>
       </div>
-      <p className="text-center m-2 p-2"id={mode?"second_dark":"primary_light"}>&#169;copyright 2022 by Asfaque khan</p>
+      <p className="text-center p-3"id={mode?"second_dark":"primary_light"}>&#169;copyright 2022 by Asfaque khan</p>
     </div>
   );
 }

@@ -17,7 +17,6 @@ function App(props) {
 console.log(mode)
   return (
     <>
-   
      <div className={!mode?"light":"dark"}>
         <Navbar />
         <Main />
@@ -27,7 +26,6 @@ console.log(mode)
         <Footer />
         <Redirect />
         </div>
-       
     </>
   );
 }
