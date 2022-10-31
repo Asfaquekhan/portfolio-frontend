@@ -1,11 +1,10 @@
 import React from "react";
-import { useContext } from "react";
-import { ThemeContext } from "../component/Context/ThemeContext";
+import { useMode } from "../component/Context/ThemeContext";
 
 
 export default function About(props) { 
+ const mode =useMode();
 
- const a = useContext(ThemeContext)
   const greet = new Date().getHours();
   let setgreet = "";
   if (greet < 12) {
@@ -17,13 +16,13 @@ export default function About(props) {
   }
   return (
     <div className="h-screen mx-5" id="about">
-    <h1 className="text-center text-3xl">About me{a}</h1>
+    <h1 className="text-center text-3xl"id={mode?"primary_dark":"primary_light"}>About me</h1>
       <div className="md:flex h-full max-w-[900px] mx-auto justify-between items-center py-8">
   
         <img src=" " alt="" className="rounded-full" width={320} />
        
-        <div className="leading-8">
-          <p className="text-xl font-bold ">
+        <div className="leading-8"id={mode?"second_dark":"second_light"}>
+          <p className="text-xl font-bold " >
             Hi,<span>{setgreet}!</span> Hope you having a great day
           </p>
              <p className="">My name is Asfaque khan.i'm 24 year self-taught aspiring frontend web devloaper

@@ -7,11 +7,56 @@
   font-family: 'Poppins', sans-serif;
 }
 .light{
-  color: black;
-  background-color: white;
+ 
+  background-color:#fff;
+  transition: ease-in-out
 }
 .dark{
-  color: white;
-  background-color: black;
+  
+  background-color: #121212;
+  transition: ease-in-out
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sora:wght@800&display=swap');
+/*  for darkmode*/
+#primary_dark{
+  color: #fff;
+}
+
+#second_dark{
+  color:rgba(255, 255,255,0.7)
+}
+
+#button_dark{
+  color: #fff;
+  background-color: rgba(255,255,255,0.16);
+}
+#button_dark:hover{
+  background-color: rgba(255,255,255,0.08);
+}
+
+#icons_dark{
+  color: #fff;
+}
+/*  for lightmode*/
+
+
+
+#primary_light{
+  color: rgba(0, 0, 0, 87);
+}
+
+#second_light{
+  color:rgba(0, 0, 0, 6)
+}
+#button_light{
+  color: rgba(0,0,0,0.54);
+  background-color: rgba(0,0,0,0.08);
+  border: 5px solid red;
+  
+}
+#button_light:hover{
+  background-color: rgba(0,0,0,0.04);
+}
+#icons_light{
+  color: rgba(0,0,0,0.54);
+}

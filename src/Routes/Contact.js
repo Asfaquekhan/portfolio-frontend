@@ -2,11 +2,11 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 import { TextField } from "@mui/material";
-
+import { useMode } from "../component/Context/ThemeContext";
 
 
 export default function Contact() {
-
+const mode=useMode()
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -30,10 +30,10 @@ export default function Contact() {
       );
   };
   return (
-    <>
+    <div id="contact">
    
-      <h1 className="text-center text-3xl my-4" id="contact">Contact("Hire me");</h1>
-      <div className=" max-w-[800px] w-full h-screen mx-auto justify-between  ">
+      <h1 className="text-center text-3xl my-4" id={mode?"primary_dark":"primary_light"}>Contact("Hire me");</h1>
+      <div className=" max-w-[800px] w-full h-screen mx-auto justify-between  " >
         <div className="">
           <form ref={form} onSubmit={sendEmail} className="">
            <div className="my-6 mx-9">
@@ -65,6 +65,6 @@ export default function Contact() {
         </div>
         
       </div>
-    </>
+    </div>
   );
 }

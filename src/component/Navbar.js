@@ -52,7 +52,7 @@ console.log(mode)
           : "sticky top-0 flex h-12 max-w-screen mx-auto justify-between items-center z-40 backdrop-blur transition-colors duration-500 opacity-95 shadow-xl"
       } 
     >
-      <div>
+      <div id={mode?"primary_dark":"primary_light"}>
         <ul className="flex mx-4">
           <li><img src="https://cdn.shopify.com/shopifycloud/hatchful_web_two/bundles/4a14e7b2de7f6eaf5a6c98cb8c00b8de.png" alt="" width={30} className='rounded-full mx-4'/></li>
           <Link to="main" spy={true} smooth={true} offset={50} duration={500}>
@@ -62,7 +62,7 @@ console.log(mode)
         </ul>
       </div>
       <nav>
-        <ul className="hidden md:flex text-lg">
+        <ul className="hidden md:flex text-lg" id={mode?"primary_dark":"primary_light"}>
         
         <li className=" mx-3 border rounded-full" onClick={theme}>{mode?<BsSun className="mx-4 my-1" size={20}/>:<BsMoonStars className="mx-4 my-1" size={20}/>}</li>
             <li className="flex items-center px-3  mx-2  hover:bg-slate-900 hover:text-white hover:rounded-full" onClick={top}>
@@ -106,9 +106,9 @@ console.log(mode)
           </Link>
         </ul>
       </nav>
-      <button className="md:hidden mx-3 border rounded-full" onClick={theme}>{mode?<BsSun className="mx-4 my-1" size={20}/>:<BsMoonStars className="mx-4 my-1" size={20}/>}</button>
+      <button className="md:hidden mx-3 border rounded-full" id={mode?"icons_dark":"icon_light"} onClick={theme}>{mode?<BsSun className="mx-4 my-1" size={20}/>:<BsMoonStars className="mx-4 my-1" size={20}/>}</button>
       
-      <div onClick={handleNav} className="block md:hidden">
+      <div onClick={handleNav} className="block md:hidden"id={mode?"icons_dark":"prima_light"}>
      
         {!nav ? <AiOutlineMenu size={25} /> : <AiOutlineClose size={25} />}
       
@@ -118,7 +118,7 @@ console.log(mode)
           !nav
             ? "fixed left-[-100%] top-0 w-[60%] min-h-screen text-white bg-slate-900 ease-in-out duration-500"
             : "md:hidden fixed left-0 top-0 w-[60%] min-h-screen text-white bg-slate-900 ease-in-out duration-500"
-        }
+        } id={mode?"primary_dark":"primarys_light"}
       >
         <ul className="">
           <Link to="/">
