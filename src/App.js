@@ -8,7 +8,7 @@ import About from "./Routes/About";
 import Main from "./Routes/Main";
 
 import Redirect from "./component/Redirect";
-import StateContext, {  useMode } from "./component/Context/ThemeContext";
+import {  useMode } from "./component/Context/ThemeContext";
 
 
 
@@ -17,9 +17,8 @@ function App(props) {
 console.log(mode)
   return (
     <>
+   
      <div className={!mode?"light":"dark"}>
-     
-     <StateContext>
         <Navbar />
         <Main />
         <Project />
@@ -27,8 +26,8 @@ console.log(mode)
         <Contact />
         <Footer />
         <Redirect />
-        </StateContext>
         </div>
+       
     </>
   );
 }
