@@ -43,7 +43,7 @@ export default function Navbar() {
   const mode =useMode()
   const theme =useFun()
 
-
+console.log(mode)
   return (
     <div
       className={
@@ -122,16 +122,17 @@ export default function Navbar() {
       >
         <ul className="">
           <Link to="/">
-            <p className="text-2xl my-8 mx-8 flex items-center">
+            <p className="text-2xl my-8 mx-8 flex items-center ">
               {" "}
-              <AiOutlineHome className="mx-2" />
-              &#123; A.K &#125;
+             
+              &lt;A.K&gt;
             </p>
           </Link>
-          <li className="flex items-center p-2 m-2 hover:bg-slate-900 hover:text-white hover:rounded-full" onClick={top}>
+          <li className="flex items-center p-2 m-7 border-b-2" onClick={top}>
               <AiOutlineHome className="mx-2" size={20}/>
               Home
             </li>
+            
           <Link
             to="project"
             spy={true}
@@ -139,7 +140,7 @@ export default function Navbar() {
             offset={-80}
             duration={500}
           >
-            <li className="flex items-center p-2 m-2 border-b border-gray-900 "><MdOutlineWorkOutline className="mx-2" size={20}/>
+            <li className="flex items-center p-2 m-7 border-b-2 "><MdOutlineWorkOutline className="mx-2" size={20}/>
               Projects
             </li>
           </Link>
@@ -149,7 +150,7 @@ export default function Navbar() {
             smooth={true}
             offset={-100}
             duration={500}>
-            <li className="flex items-center p-2 m-2 border-b border-gray-900 ">
+            <li className="flex items-center p-2 m-7 border-b-2 ">
               {" "}
               <BiMessageDots className="mx-2" size={20} /> About
             </li>
@@ -159,7 +160,7 @@ export default function Navbar() {
             smooth={true}
             offset={-100}
             duration={500}>
-            <li className="flex items-center p-2 m-2 border-b border-gray-900 ">
+            <li className="flex items-center p-2 m-7 border-b-2 ">
               <AiOutlineContacts className="mx-2" size={20}/>
               Contact
             </li>

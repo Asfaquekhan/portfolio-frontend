@@ -75,7 +75,7 @@ export default function Main(props) {
             src=".\Images\IMG_20221013_181332.jpg"
             alt=""
             width={240}
-            className="rounded-full border-2 border-slate-900 inline-block justify-center"
+            className="rounded-full border-2 border-slate-900 mx-auto"
           />
  <div className="flex my-5 space-x-7 justify-center">
             <a href="https://github.com/Asfaquekhan">

@@ -5,18 +5,13 @@ import { AiOutlineMail } from "react-icons/ai";
 export default function Footer() {
   return (
     <div>
-      <hr />
-      <div className=" w-full grid grid-cols-3">
+      
+      <div className=" w-full grid grid-cols-2 justify-between">
         <div className="text-center">
           <p className="m-2">logo</p>
-          <p className="m-2">Asfaque khan</p>
+        
         </div>
-        <div className="justify-center text-center md:flex">
-      
-          <p className="text-sm m-2">Home</p>
-          <p className="text-sm m-2">Project</p>
-          <p className="text-sm m-2">About</p>
-        </div>
+       
         <div className="text-center">
           <div className="flex justify-center">
             <span className="m-2">
