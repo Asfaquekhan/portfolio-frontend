@@ -12,8 +12,9 @@ export default function Main(props) {
   const mode =useMode()
   return (
     <>
-      <div className="md:flex max-w-[950px]  mx-auto justify-between my-11">
-        <div className="h-screen md:w-1/2 space-y-10 ">
+      <div className="md:flex max-w-[950px]  mx-auto justify-between my-11" id="main">
+        <div className="h-screen md:w-1/2 space-y-10 " data-aos="fade-up"
+     data-aos-duration="1000">
           <h1 className="text-2xl m-3  " id={mode?"primary_dark":"primary_light"}>Hi I'm Asfaque</h1>
           <p className="text-4xl m-3 flex " id={mode?"primary_dark":"primary_light"}>Frontend Web Devloper</p>
           <p className="my-10 m-3"   id={mode?"second_dark":"second_light"}>
@@ -70,13 +71,14 @@ export default function Main(props) {
             </button>
           </div>
         </div>
-        <div className="md:my-16 ">
+        <div className="md:my-16 h-96 " data-aos="fade-up"
+     data-aos-duration="1000" >
           
           <img
             src=".\Images\IMG_20221013_181332.jpg"
             alt=""
             width={240}
-            className="rounded-full border-2 border-slate-900 mx-auto"
+            className="rounded-full border-2 border-slate-900 mx-auto" 
           />
  <div className="flex my-5 space-x-7 justify-center">
             <a href="https://github.com/Asfaquekhan" id={mode?"icons_dark":"icon_light"} target="_blank" rel="noopener noreferrer">
@@ -93,9 +95,11 @@ export default function Main(props) {
             <span className="" id={mode?"icons_dark":"icon_light"}>
               <BsWhatsapp size={20} />
             </span>
+           
           </div>
           
         </div>
+        
       </div>
     </>
   );
