@@ -15,7 +15,7 @@ export default function About(props) {
     setgreet = "Good Evening";
   }
   return (
-    <div className="h-screen m-3" id="about">
+    <div className="h-screen m-3" id="about"  >
     <h1 className="text-center text-3xl"id={mode?"primary_dark":"primary_light"}>About me</h1>
       <div className="md:flex h-full max-w-[900px] mx-auto justify-between items-center">
   

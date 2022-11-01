@@ -5,7 +5,7 @@ export default function DataProject(props) {
   const mode=useMode()
   return (
     <div>
-      <section className="p-4 my-4 rounded-3xl shadow-md">
+      <section className="p-4 my-4 rounded-3xl shadow-md" >
         <h1 className="text-center text-2xl p-3 m-3"id={mode?"primary_dark":"primary_light"}>{props.name}</h1>
         <div className="md:flex space-x-3">
           <div>

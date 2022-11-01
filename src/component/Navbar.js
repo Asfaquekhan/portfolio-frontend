@@ -121,18 +121,25 @@ export default function Navbar() {
         } id={mode?"primary_dark":"primarys_light"}
       >
         <ul className="">
-          <Link to="/">
+          <Link to="main">
             <p className="text-2xl my-8 mx-8 flex items-center ">
               {" "}
              
               &lt;A.K&gt;
             </p>
           </Link>
+          <Link
+            to="main"
+            spy={true}
+            smooth={true}
+            offset={100}
+            duration={500}
+          >
           <li className="flex items-center cursor-default p-2 m-7 border-b-2" onClick={top}>
               <AiOutlineHome className="mx-2" size={20}/>
               Home
             </li>
-            
+            </Link>
           <Link
             to="project"
             spy={true}
