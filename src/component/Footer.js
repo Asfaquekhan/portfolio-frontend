@@ -18,7 +18,7 @@ export default function Footer() {
             <span className="m-2">
               <a
                 href="https://www.linkedin.com/in/asfaque-khan-359b39186/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BEyfAlF%2B9RT2r9WAgMf2C4Q%3D%3D"
-                className="flex items-center "
+                className="flex items-center " target="_blank" rel="noopener noreferrer"
               >
                 <BsGithub className="" size={20} />
               </a>
@@ -26,7 +26,7 @@ export default function Footer() {
             <span className="m-2">
               <a
                 href="https://github.com/Asfaquekhan"
-                className="flex items-center"
+                className="flex items-center" target="_blank" rel="noopener noreferrer"
               >
                 <BsLinkedin className="" size={20} />
               </a>

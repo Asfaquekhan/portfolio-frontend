@@ -9,12 +9,12 @@
 .light{
  
   background-color:#fff;
-  transition: ease-in-out
+  transition: 1s
 }
 .dark{
   
   background-color: #121212;
-  transition: ease-in-out
+  transition: 1s
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sora:wght@800&display=swap');
 /*  for darkmode*/
@@ -29,6 +29,16 @@
 #button_dark{
   color: #fff;
   background-color: rgba(255,255,255,0.16);
+
+  
+    border-radius: 9px;
+    border-style: none;
+    box-sizing: border-box;
+    
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    touch-action: manipulation;
 }
 #button_dark:hover{
   background-color: rgba(255,255,255,0.08);
@@ -37,7 +47,17 @@
 #icons_dark{
   color: #fff;
 }
+#primaryn_dark{
+  color: #fff;
+  touch-action: manipulation;
+}
+  #primaryn_dark:hover{
+    background-color: rgba(255,255,255,0.16);
+  }
+
+  
 /*  for lightmode*/
+
 
 
 
@@ -49,14 +69,35 @@
   color:rgba(0, 0, 0, 6)
 }
 #button_light{
-  color: rgba(0,0,0,0.54);
-  background-color: rgba(0,0,0,0.08);
-  border: 5px solid red;
+    background-color: black;
+    border-radius: 9px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    touch-action: manipulation;
+   
+  }
   
-}
-#button_light:hover{
-  background-color: rgba(0,0,0,0.04);
-}
+  #button_light:hover,
+  #button_light:focus {
+    background-color:#222;
+  }
+  
+  #primaryn_light{
+    color: black;
+    touch-action: manipulation;
+  
+  }
+  #primaryn_light:hover{
+    color: #fff;
+    background-color: #121212;
+  }
+  
+
+
 #icons_light{
   color: rgba(0,0,0,0.54);
 }

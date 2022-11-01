@@ -14,7 +14,7 @@ import {  useMode } from "./component/Context/ThemeContext";
 
 function App(props) {
   const mode=useMode()
-console.log(mode)
+
   return (
     <>
      <div className={!mode?"light":"dark"}>

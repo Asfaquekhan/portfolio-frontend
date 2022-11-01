@@ -43,7 +43,7 @@ export default function Navbar() {
   const mode =useMode()
   const theme =useFun()
 
-console.log(mode)
+
   return (
     <div
       className={
@@ -62,10 +62,10 @@ console.log(mode)
         </ul>
       </div>
       <nav>
-        <ul className="hidden md:flex text-lg" id={mode?"primary_dark":"primary_light"}>
+        <ul className="hidden md:flex text-lg" >
         
-        <li className=" mx-3 border rounded-full" onClick={theme}>{mode?<BsSun className="mx-4 my-1" size={20}/>:<BsMoonStars className="mx-4 my-1" size={20}/>}</li>
-            <li className="flex items-center px-3  mx-2  hover:bg-slate-900 hover:text-white hover:rounded-full" onClick={top}>
+        <li className=" mx-3 " id={mode?"primary_dark":"primary_light"} onClick={theme}>{mode?<BsSun className="mx-4 my-1" size={20}/>:<BsMoonStars className="mx-4 my-1" size={20}/>}</li>
+            <li className="flex items-center px-3 cursor-default mx-2 hover:rounded-full" id={mode?"primaryn_dark":"primaryn_light"} onClick={top}>
               <AiOutlineHome className="mx-2" />
               Home
             </li>
@@ -77,7 +77,7 @@ console.log(mode)
             offset={-80}
             duration={500}
           >
-            <li className="flex items-center px-3  mx-2 hover:bg-slate-900 hover:text-white hover:rounded-full">
+            <li className="flex items-center px-3 cursor-default mx-2 hover:rounded-full" id={mode?"primaryn_dark":"primaryn_light"}>
              <MdOutlineWorkOutline className="mx-2" size={20}/> Projects
             </li>
           </Link>
@@ -88,7 +88,7 @@ console.log(mode)
             offset={-100}
             duration={500}
           >
-            <li className="flex items-center px-3 mx-2 hover:bg-slate-900 hover:text-white hover:rounded-full">
+            <li className="flex items-center cursor-default px-3 mx-2 hover:rounded-full" id={mode?"primaryn_dark":"primaryn_light"}>
               <BiMessageDots className="mx-2" /> About
             </li>
           </Link>
@@ -99,14 +99,14 @@ console.log(mode)
             offset={-50}
             duration={500}
           >
-            <li className="flex items-center px-3 mx-2  hover:bg-slate-900 hover:text-white hover:rounded-full">
+            <li className="flex items-center px-3 cursor-default mx-2 hover:rounded-full" id={mode?"primaryn_dark":"primaryn_light"}>
               <AiOutlineContacts className="mx-2" />
               Contact
             </li>
           </Link>
         </ul>
       </nav>
-      <button className="md:hidden mx-3 border rounded-full" id={mode?"icons_dark":"icon_light"} onClick={theme}>{mode?<BsSun className="mx-4 my-1" size={20}/>:<BsMoonStars className="mx-4 my-1" size={20}/>}</button>
+      <button className="md:hidden mx-3 " id={mode?"icons_dark":"icon_light"} onClick={theme}>{mode?<BsSun className="mx-4 my-1" size={20}/>:<BsMoonStars className="mx-4 my-1" size={20}/>}</button>
       
       <div onClick={handleNav} className="block md:hidden"id={mode?"icons_dark":"prima_light"}>
      
@@ -128,7 +128,7 @@ console.log(mode)
               &lt;A.K&gt;
             </p>
           </Link>
-          <li className="flex items-center p-2 m-7 border-b-2" onClick={top}>
+          <li className="flex items-center cursor-default p-2 m-7 border-b-2" onClick={top}>
               <AiOutlineHome className="mx-2" size={20}/>
               Home
             </li>
@@ -140,7 +140,7 @@ console.log(mode)
             offset={-80}
             duration={500}
           >
-            <li className="flex items-center p-2 m-7 border-b-2 "><MdOutlineWorkOutline className="mx-2" size={20}/>
+            <li className="flex items-center cursor-default p-2 m-7 border-b-2 "><MdOutlineWorkOutline className="mx-2" size={20}/>
               Projects
             </li>
           </Link>
@@ -150,7 +150,7 @@ console.log(mode)
             smooth={true}
             offset={-100}
             duration={500}>
-            <li className="flex items-center p-2 m-7 border-b-2 ">
+            <li className="flex items-center cursor-default p-2 m-7 border-b-2 ">
               {" "}
               <BiMessageDots className="mx-2" size={20} /> About
             </li>
@@ -160,7 +160,7 @@ console.log(mode)
             smooth={true}
             offset={-100}
             duration={500}>
-            <li className="flex items-center p-2 m-7 border-b-2 ">
+            <li className="flex cursor-default items-center p-2 m-7 border-b-2">
               <AiOutlineContacts className="mx-2" size={20}/>
               Contact
             </li>

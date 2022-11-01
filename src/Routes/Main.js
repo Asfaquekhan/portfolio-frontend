@@ -12,7 +12,7 @@ export default function Main(props) {
   const mode =useMode()
   return (
     <>
-      <div className="md:flex max-w-[950px]  mx-auto justify-between my-20">
+      <div className="md:flex max-w-[950px]  mx-auto justify-between my-11">
         <div className="h-screen md:w-1/2 space-y-10 ">
           <h1 className="text-2xl m-3  " id={mode?"primary_dark":"primary_light"}>Hi I'm Asfaque</h1>
           <p className="text-4xl m-3 flex " id={mode?"primary_dark":"primary_light"}>Frontend Web Devloper</p>
@@ -20,8 +20,8 @@ export default function Main(props) {
             A self taught frontend web devloper with a passion for making beautiful, responsive web
             applications.
           </p>
-          <div className="m-2
-           p-2" id={mode?"second_dark":"second_light"}>
+          <div className="m-3
+           " id={mode?"second_dark":"second_light"}>
             <ul className="grid grid-cols-2">
               <li className="flex items-center p-2">
                 <IoLogoHtml5 className="mr-2" size={20} />
@@ -35,7 +35,7 @@ export default function Main(props) {
                 <SiTailwindcss className="mr-2" size={20} />Tailwind
               </li>
               <li className="flex items-center p-2">
-                <IoLogoJavascript className="mr-2 " size={20} />Javascript
+                <IoLogoJavascript className="mr-2" size={20} />Javascript
               </li>
               <li className="flex items-center p-2">
                 {" "}
@@ -55,12 +55,12 @@ export default function Main(props) {
               offset={-50}
               duration={500}
             >
-              <button className="p-2 flex items-center text-center justify-center transition-colors duration-150 rounded-lg focus:shadow-outline" id={mode?"button_dark":"sbutton_light"}>
+              <button className="p-2 flex items-center text-center justify-center transition-colors duration-150 rounded-lg focus:shadow-outline" id={mode?"button_dark":"button_light"}>
                 <MdWorkOutline size={20} className="mr-2" />
                 Hire me
               </button>
             </Link>
-            <button className="p-2 text-center justify-center transition-colors duration-150 rounded-lg focus:shadow-outline  " id={mode?"button_dark":"sbutton_light"}>
+            <button className="p-2 text-center justify-center transition-colors duration-150 rounded-lg focus:shadow-outline  " id={mode?"button_dark":"button_light"}>
               <a
                 href="https://drive.google.com/u/0/uc?id=1FjiPUuhKStIUTXyHPdL-1pwM8hKwwkIi&export=download"
                 className="flex items-center "
@@ -79,13 +79,13 @@ export default function Main(props) {
             className="rounded-full border-2 border-slate-900 mx-auto"
           />
  <div className="flex my-5 space-x-7 justify-center">
-            <a href="https://github.com/Asfaquekhan" id={mode?"icons_dark":"icon_light"}>
+            <a href="https://github.com/Asfaquekhan" id={mode?"icons_dark":"icon_light"} target="_blank" rel="noopener noreferrer">
               <BsGithub className="" size={20} />
             </a>
 
             <a
               href="https://www.linkedin.com/in/asfaque-khan-359b39186/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BEyfAlF%2B9RT2r9WAgMf2C4Q%3D%3D"
-              className="text-center"id={mode?"icons_dark":"icon_light"}
+              className="text-center"id={mode?"icons_dark":"icon_light"} target="_blank" rel="noopener noreferrer"
             >
               <BsLinkedin className="" size={20} />
             </a>
