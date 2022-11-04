@@ -74,8 +74,10 @@ export default function Navbar() {
             to="project"
             spy={true}
             smooth={true}
-            offset={-80}
+            offset={-50}
             duration={500}
+          
+            
           >
             <li className="flex items-center px-3 cursor-default mx-2 hover:rounded-full" id={mode?"primaryn_dark":"primaryn_light"}>
              <MdOutlineWorkOutline className="mx-2" size={20}/> Projects
@@ -85,8 +87,9 @@ export default function Navbar() {
             to="about"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-70}
             duration={500}
+          
           >
             <li className="flex items-center cursor-default px-3 mx-2 hover:rounded-full" id={mode?"primaryn_dark":"primaryn_light"}>
               <BiMessageDots className="mx-2" /> About
@@ -96,8 +99,9 @@ export default function Navbar() {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={-70}
             duration={500}
+           
           >
             <li className="flex items-center px-3 cursor-default mx-2 hover:rounded-full" id={mode?"primaryn_dark":"primaryn_light"}>
               <AiOutlineContacts className="mx-2" />
@@ -134,6 +138,7 @@ export default function Navbar() {
             smooth={true}
             offset={100}
             duration={500}
+            
           >
           <li className="flex items-center cursor-default p-2 m-7 border-b-2" onClick={top}>
               <AiOutlineHome className="mx-2" size={20}/>
@@ -144,7 +149,7 @@ export default function Navbar() {
             to="project"
             spy={true}
             smooth={true}
-            offset={-80}
+            offset={-50}
             duration={500}
           >
             <li className="flex items-center cursor-default p-2 m-7 border-b-2 "><MdOutlineWorkOutline className="mx-2" size={20}/>
@@ -155,7 +160,7 @@ export default function Navbar() {
           <Link  to="about"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-70}
             duration={500}>
             <li className="flex items-center cursor-default p-2 m-7 border-b-2 ">
               {" "}
@@ -165,7 +170,7 @@ export default function Navbar() {
           <Link to="contact"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-70}
             duration={500}>
             <li className="flex cursor-default items-center p-2 m-7 border-b-2">
               <AiOutlineContacts className="mx-2" size={20}/>

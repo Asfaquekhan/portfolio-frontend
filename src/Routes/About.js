@@ -25,7 +25,7 @@ export default function About(props) {
           <p className="text-xl font-bold " >
             Hi,<span>{setgreet}!</span> Hope you having a great day
           </p>
-             <p className="">My name is Asfaque khan.i'm 24 year self-taught frontend web devloaper
+             <p className="">My name is Asfaque khan.i'm a self-taught frontend web devloaper
             </p>
           <hr />
           <p className="text-xl font-bold">

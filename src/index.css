@@ -52,6 +52,7 @@
   touch-action: manipulation;
   
 }
+
   #primaryn_dark:hover{
     background-color: rgba(255,255,255,0.16);
     transition: 600ms;
@@ -89,7 +90,7 @@
   }
   
   #primaryn_light{
-    color: black;
+    color: #121212;
     touch-action: manipulation;
   
   }
@@ -98,9 +99,8 @@
     background-color: #121212;
     
   }
-  
-
 
 #icons_light{
   color: rgba(0,0,0,0.54);
 }
+
