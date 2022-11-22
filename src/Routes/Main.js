@@ -1,7 +1,7 @@
 import React from "react";
 import { SiTailwindcss } from "react-icons/si";
 import { IoLogoReact, IoLogoHtml5, IoLogoJavascript } from "react-icons/io5";
-import { BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 import { BsGithub, BsDownload } from "react-icons/bs";
 import { Link } from "react-scroll";
 import { SiRedux } from "react-icons/si";
@@ -92,9 +92,7 @@ export default function Main(props) {
               <BsLinkedin className="" size={20} />
             </a>
             
-            <span className="" id={mode?"icons_dark":"icon_light"}>
-              <BsWhatsapp size={20} />
-            </span>
+           
            
           </div>
           

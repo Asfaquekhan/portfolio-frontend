@@ -16,7 +16,7 @@ export default function About(props) {
   return (
     <div className="h-screen m-3 py-16" id="about">
       <h1
-        className="mb-4 text-2xl tracking-tight font-extrabold text-center"
+        className="mb-4 text-4xl tracking-tight  text-center"
         id={mode ? "primary_dark" : "primary_light"}
       >
         About me
@@ -27,8 +27,8 @@ export default function About(props) {
         <div className=" py-16" id={mode ? "second_dark" : "second_light"}>
         
           
-<p className="mb-3 font-light text-gray-500 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-4xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left">  Hi,<span>{setgreet}!</span> Hope you having a great day </p>
-<p className="font-light text-gray-500 dark:text-gray-400">My name is Asfaque khan</p>
+<p className="mb-3 font-light text-gray-500 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-4xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left">  Hi,<span>{setgreet}!</span> Hope you having a great day...</p>
+<p className="font-light text-gray-500 dark:text-gray-400">My name is Asfaque khan.I am passonate about technology</p>
 
         </div>
       </div>
