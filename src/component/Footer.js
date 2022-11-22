@@ -9,7 +9,7 @@ export default function Footer() {
       
       <div className=" w-full grid grid-cols-2 justify-between">
         <div className="text-center">
-          <p className="m-2">logo</p>
+          <p className="m-2">&lt;A.K&gt;</p>
         
         </div>
        

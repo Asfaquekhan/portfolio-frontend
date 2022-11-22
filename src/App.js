@@ -13,6 +13,7 @@ import DataProject from "./component/DataProject";
 
 
 
+
 function App(props) {
   const mode=useMode()
 
@@ -26,6 +27,7 @@ function App(props) {
         <Contact />
         <Footer />
         <Redirect />
+        
         </div>
     </>
   );

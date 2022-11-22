@@ -54,7 +54,7 @@ export default function Navbar() {
     >
       <div id={mode?"primary_dark":"primary_light"}>
         <ul className="flex mx-4">
-          <li><img src="https://cdn.shopify.com/shopifycloud/hatchful_web_two/bundles/4a14e7b2de7f6eaf5a6c98cb8c00b8de.png" alt="" width={30} className='rounded-full mx-4'/></li>
+         
           <Link to="main" spy={true} smooth={true} offset={50} duration={500}>
             <li className="text-2xl">&lt;A.K&gt;</li>
           </Link>
