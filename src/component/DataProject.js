@@ -1,4 +1,5 @@
 import React from "react";
+import {AiOutlineLink,AiFillGithub} from 'react-icons/ai'
 
 import { FaReact } from "react-icons/fa";
 import { SiRedux, SiMaterialui } from "react-icons/si";
@@ -110,6 +111,7 @@ export default function DataProject(props) {
                         </div>
                       </div>
                       <div className="flex space-x-4 justify-center m-6 p-2">
+                        
                         <a
                           href={curr.live}
                           target="_blank"
@@ -118,7 +120,7 @@ export default function DataProject(props) {
                           <button
                             className="p-2 flex items-center text-center justify-center transition-colors duration-150 rounded-lg focus:shadow-outline"
                             id={mode ? "button_dark" : "button_light"}
-                          >
+                          ><AiOutlineLink className="mr-2" size={25}/>
                             Live Demo
                           </button>
                         </a>
@@ -130,7 +132,7 @@ export default function DataProject(props) {
                           <button
                             className="p-2 flex items-center text-center justify-center transition-colors duration-150 rounded-lg focus:shadow-outline"
                             id={mode ? "button_dark" : "button_light"}
-                          >
+                          ><AiFillGithub className="mr-2" size={25}/>
                             GitHUb
                           </button>
                         </a>
