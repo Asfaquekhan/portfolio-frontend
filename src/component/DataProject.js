@@ -1,6 +1,6 @@
 import React from "react";
 import {AiOutlineLink,AiFillGithub} from 'react-icons/ai'
-
+import {SiTailwindcss} from 'react-icons/si'
 import { FaReact } from "react-icons/fa";
 import { SiRedux, SiMaterialui } from "react-icons/si";
 import { VscJson } from "react-icons/vsc";
@@ -26,19 +26,19 @@ export default function DataProject(props) {
       name: "Project 1",
     },
     {
-      live: "https://github.com/Asfaquekhan/Crypto_project",
-      github: "https://github.com/Asfaquekhan/Crypto_project",
-      text: "project 2",
+      live: "https://kanban.netlify.app/",
+      github: "https://github.com/Asfaquekhan/Kanban_project",
+      text: "Kanban Board with drag and drop feature.",
       image: "https://reactjs.org/logo-og.png",
       skills: [
         { skill: "React", icon: <FaReact /> },
-        { skill: "React", icon: <FaReact /> },
+        { skill: "Tailwind css", icon: <SiTailwindcss /> },
         { skill: "React", icon: <FaReact /> },
         { skill: "React", icon: <FaReact /> },
         { skill: "React", icon: <FaReact /> },
         { skill: "React", icon: <FaReact /> },
       ],
-      name: "project 2",
+      name: "Kanban Board",
     },
     {
       live: "https://cryptosquare1.netlify.app/",
@@ -74,10 +74,10 @@ export default function DataProject(props) {
         {Projects &&
           Projects.map((curr) => {
             return (
-              <div>
+              <div >
                 <section className="">
                   <h1
-                    className="text-center p-2 m-2 text-xl"
+                    className="text-center p-2 m-2 text-xl  "
                     id={mode ? "primary_dark" : "primary_light"}
                   >
                     {curr.name}
