@@ -2,7 +2,7 @@ import React from "react";
 import {AiOutlineLink,AiFillGithub} from 'react-icons/ai'
 import {SiTailwindcss} from 'react-icons/si'
 import { FaReact } from "react-icons/fa";
-import { SiRedux, SiMaterialui } from "react-icons/si";
+import { SiRedux, SiMaterialui,SiFirebase } from "react-icons/si";
 import { VscJson } from "react-icons/vsc";
 import { GiChart } from "react-icons/gi";
 import { useMode } from "./Context/ThemeContext";
@@ -11,19 +11,19 @@ export default function DataProject(props) {
 
   const Projects = [
     {
-      live: "https://cryptosquare1.netlify.app/",
-      github: "https://github.com/Asfaquekhan/Crypto_project",
-      text: "project1",
+      live: "https://netflix-clone790.netlify.app/",
+      github: "https://github.com/Asfaquekhan/netflix-clone",
+      text: "A Netflix clone with Firebase backend",
       image: "https://reactjs.org/logo-og.png",
       skills: [
         { skill: "React", icon: <FaReact /> },
-        { skill: "React", icon: <FaReact /> },
-        { skill: "React", icon: <FaReact /> },
+        { skill: "Tailwind", icon: <SiTailwindcss /> },
+        { skill: "Firebase", icon: <SiFirebase /> },
         { skill: "React", icon: <FaReact /> },
         { skill: "React", icon: <FaReact /> },
         { skill: "React", icon: <FaReact /> },
       ],
-      name: "Project 1",
+      name: "Netflix Clone",
     },
     {
       live: "https://kanban.netlify.app/",
@@ -118,7 +118,7 @@ export default function DataProject(props) {
                           rel="noopener noreferrer"
                         >
                           <button
-                            className="p-2 flex items-center text-center justify-center transition-colors duration-150 rounded-lg focus:shadow-outline"
+                            className=" flex items-center text-center justify-center transition-colors duration-150 rounded-lg focus:shadow-outline px-4 py-2"
                             id={mode ? "button_dark" : "button_light"}
                           ><AiOutlineLink className="mr-2" size={25}/>
                             Live Demo
@@ -130,7 +130,7 @@ export default function DataProject(props) {
                           rel="noopener noreferrer"
                         >
                           <button
-                            className="p-2 flex items-center text-center justify-center transition-colors duration-150 rounded-lg focus:shadow-outline"
+                            className=" flex items-center text-center justify-center transition-colors duration-150 rounded-lg focus:shadow-outline px-4 py-2"
                             id={mode ? "button_dark" : "button_light"}
                           ><AiFillGithub className="mr-2" size={25}/>
                             GitHUb

@@ -31,7 +31,7 @@ export default function Contact() {
   };
   return (
     <section className="" id="contact">
-      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <div className={alert?"hidden":"py-8 lg:py-16 px-4 mx-auto max-w-screen-md"}>
         <h2 className="mb-4 text-4xl tracking-tight  text-center text-gray-900 dark:text-white">
           Contact("Hire me")
         </h2>
@@ -78,7 +78,7 @@ export default function Contact() {
                 placeholder="Type Your message here"
               ></textarea>
           
-          <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onClick={()=>setalert(true)} >Send</button>
+          <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"  onClick={()=>setalert(true)} >Send</button>
         </form>
       </div>
       <div className={alert?" md:w-1/4 mx-auto text-center p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800":"hidden"} role="alert">
