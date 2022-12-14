@@ -1,8 +1,8 @@
 import React from "react";
-import {AiOutlineLink,AiFillGithub} from 'react-icons/ai'
-import {SiTailwindcss} from 'react-icons/si'
+import { AiOutlineLink, AiFillGithub } from "react-icons/ai";
+import { SiTailwindcss } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
-import { SiRedux, SiMaterialui,SiFirebase } from "react-icons/si";
+import { SiRedux, SiMaterialui, SiFirebase } from "react-icons/si";
 import { VscJson } from "react-icons/vsc";
 import { GiChart } from "react-icons/gi";
 import { useMode } from "./Context/ThemeContext";
@@ -14,14 +14,14 @@ export default function DataProject(props) {
       live: "https://netflix-clone790.netlify.app/",
       github: "https://github.com/Asfaquekhan/netflix-clone",
       text: "A Netflix clone with Firebase backend",
-      image: "https://reactjs.org/logo-og.png",
+      image:
+        "https://www.edigitalagency.com.au/wp-content/uploads/Netflix-logo-red-black-png.png",
       skills: [
         { skill: "React", icon: <FaReact /> },
         { skill: "Tailwind", icon: <SiTailwindcss /> },
         { skill: "Firebase", icon: <SiFirebase /> },
-        { skill: "React", icon: <FaReact /> },
-        { skill: "React", icon: <FaReact /> },
-        { skill: "React", icon: <FaReact /> },
+
+        { skill: "Rest API", icon: <VscJson /> },
       ],
       name: "Netflix Clone",
     },
@@ -32,7 +32,7 @@ export default function DataProject(props) {
       image: "https://reactjs.org/logo-og.png",
       skills: [
         { skill: "React", icon: <FaReact /> },
-        { skill: "Tailwind css", icon: <SiTailwindcss /> },
+        { skill: "Tailwind", icon: <SiTailwindcss /> },
         { skill: "React", icon: <FaReact /> },
         { skill: "React", icon: <FaReact /> },
         { skill: "React", icon: <FaReact /> },
@@ -51,8 +51,7 @@ export default function DataProject(props) {
         { skill: "Redux", icon: <SiRedux /> },
         { skill: "Material UI", icon: <SiMaterialui /> },
         { skill: "Chart.js", icon: <GiChart /> },
-        { skill: "Rest API", icon: <VscJson /> }
-        
+        { skill: "Rest API", icon: <VscJson /> },
       ],
       name: "CryptoSquare",
     },
@@ -74,14 +73,14 @@ export default function DataProject(props) {
         {Projects &&
           Projects.map((curr) => {
             return (
-              <div >
+              <div>
                 <section className="">
-                  <h1
-                    className="text-center p-2 m-2 text-xl  "
+                  <h2
+                    className="text-center p-2 m-2 text-xl font-bold "
                     id={mode ? "primary_dark" : "primary_light"}
                   >
                     {curr.name}
-                  </h1>
+                  </h2>
                   <div className="">
                     <div>
                       <img
@@ -99,19 +98,18 @@ export default function DataProject(props) {
                         {curr.text}
                       </article>
                       <div id={mode ? "second_dark" : "second_light"}>
-                        <div className="grid gap-3  grid-cols-3 m-2 p-2">
+                        <div className="flex flex-wrap w-3/4 mx-auto ">
                           {curr.skills.map((value) => {
                             return (
-                              <span className="flex items-center ">
+                              <button className="flex items-center p-2 m-1">
                                 {value.icon}
                                 <p className="ml-3">{value.skill}</p>
-                              </span>
+                              </button>
                             );
                           })}
                         </div>
                       </div>
                       <div className="flex space-x-4 justify-center m-6 p-2">
-                        
                         <a
                           href={curr.live}
                           target="_blank"
@@ -120,7 +118,8 @@ export default function DataProject(props) {
                           <button
                             className=" flex items-center text-center justify-center transition-colors duration-150 rounded-lg focus:shadow-outline px-4 py-2"
                             id={mode ? "button_dark" : "button_light"}
-                          ><AiOutlineLink className="mr-2" size={25}/>
+                          >
+                            <AiOutlineLink className="mr-2" size={25} />
                             Live Demo
                           </button>
                         </a>
@@ -132,7 +131,8 @@ export default function DataProject(props) {
                           <button
                             className=" flex items-center text-center justify-center transition-colors duration-150 rounded-lg focus:shadow-outline px-4 py-2"
                             id={mode ? "button_dark" : "button_light"}
-                          ><AiFillGithub className="mr-2" size={25}/>
+                          >
+                            <AiFillGithub className="mr-2" size={25} />
                             GitHUb
                           </button>
                         </a>
