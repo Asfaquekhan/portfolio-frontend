@@ -99,6 +99,12 @@
     background-color: #121212;
     
   }
+  #primaryn_light:active{
+    color: #fff;
+    background-color: #121212;
+    
+  }
+
 
 #icons_light{
   color: rgba(0,0,0,0.54);

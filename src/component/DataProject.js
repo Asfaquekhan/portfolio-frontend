@@ -6,11 +6,13 @@ import { SiRedux, SiMaterialui, SiFirebase } from "react-icons/si";
 import { VscJson } from "react-icons/vsc";
 import { GiChart } from "react-icons/gi";
 import { useMode } from "./Context/ThemeContext";
+
 export default function DataProject(props) {
   const mode = useMode();
 
   const Projects = [
     {
+      id: 1,
       live: "https://netflix-clone790.netlify.app/",
       github: "https://github.com/Asfaquekhan/netflix-clone",
       text: "A Netflix clone with Firebase backend",
@@ -26,6 +28,7 @@ export default function DataProject(props) {
       name: "Netflix Clone",
     },
     {
+      id: 2,
       live: "https://kanban.netlify.app/",
       github: "https://github.com/Asfaquekhan/Kanban_project",
       text: "Kanban Board with drag and drop feature.",
@@ -35,12 +38,12 @@ export default function DataProject(props) {
         { skill: "Tailwind", icon: <SiTailwindcss /> },
         { skill: "React", icon: <FaReact /> },
         { skill: "React", icon: <FaReact /> },
-        { skill: "React", icon: <FaReact /> },
-        { skill: "React", icon: <FaReact /> },
+       
       ],
       name: "Kanban Board",
     },
     {
+      id: 3,
       live: "https://cryptosquare1.netlify.app/",
       github: "https://github.com/Asfaquekhan/Crypto_project",
       text: "web app providing various informations about crypto currencies .Also react curd operations ",
@@ -73,7 +76,7 @@ export default function DataProject(props) {
         {Projects &&
           Projects.map((curr) => {
             return (
-              <div>
+              <div key={curr.id}>
                 <section className="">
                   <h2
                     className="text-center p-2 m-2 text-xl font-bold "
@@ -98,10 +101,10 @@ export default function DataProject(props) {
                         {curr.text}
                       </article>
                       <div id={mode ? "second_dark" : "second_light"}>
-                        <div className="flex flex-wrap w-3/4 mx-auto ">
+                        <div className="flex flex-wrap justify-around md:w-3/4 mx-auto ">
                           {curr.skills.map((value) => {
                             return (
-                              <button className="flex items-center p-2 m-1">
+                              <button className="flex  items-center p-2 m-1" >
                                 {value.icon}
                                 <p className="ml-3">{value.skill}</p>
                               </button>

@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 
+import {AiOutlineCloseCircle } from "react-icons/ai";
 
 
 export default function Contact() {
@@ -28,6 +29,7 @@ export default function Contact() {
           console.log(error.text);
         }
       );
+      setalert(true)
   };
   return (
     <section className="" id="contact">
@@ -51,6 +53,7 @@ export default function Contact() {
             name="user_name"
             className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
             placeholder="Enter your name"
+            required
           />
           <label
             htmlFor="email"
@@ -63,6 +66,7 @@ export default function Contact() {
             name="user_email"
             className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
             placeholder="@email.com"
+            required
           />
            <label
                 htmlFor="message"
@@ -76,13 +80,15 @@ export default function Contact() {
                 rows="6"
                 className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                 placeholder="Type Your message here"
+                required
               ></textarea>
           
-          <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"  onClick={()=>setalert(true)} >Send</button>
+          <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"   >Send</button>
         </form>
       </div>
       <div className={alert?" md:w-1/4 mx-auto text-center p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800":"hidden"} role="alert">
-  <span className="font-medium">Email Send!</span> Thanks for connecting
+ <div><span className="float-right"><AiOutlineCloseCircle size={20} onClick={()=>setalert(false)}/></span></div>
+ <div> <span className="font-medium">Email Send!</span> Thanks for connecting </div>
 </div>
     </section>
   );

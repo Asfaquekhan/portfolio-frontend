@@ -52,7 +52,7 @@ export default function Navbar() {
           : "sticky top-0 flex h-12 max-w-screen mx-auto justify-between items-center z-40 backdrop-blur transition-colors duration-500 opacity-95 shadow-xl"
       } 
     >
-      <div id={mode?"primary_dark":"primary_light"}>
+      <div id={mode?"primary_dark":"primary_light"} className='cursor-pointer'>
         <ul className="flex mx-4">
          
           <Link to="main" spy={true} smooth={true} offset={50} duration={500}>
@@ -64,8 +64,8 @@ export default function Navbar() {
       <nav>
         <ul className="hidden md:flex text-lg" >
         
-        <li className=" mx-3 " id={mode?"primary_dark":"primary_light"} onClick={theme}>{mode?<BsSun className="mx-4 my-1" size={20}/>:<BsMoonStars className="mx-4 my-1" size={20}/>}</li>
-            <li className="flex items-center px-3 cursor-default mx-2 hover:rounded-full" id={mode?"primaryn_dark":"primaryn_light"} onClick={top}>
+        <li className=" mx-3 cursor-pointer " id={mode?"primary_dark":"primary_light"} onClick={theme}>{mode?<BsSun className="mx-4 my-1" size={20}/>:<BsMoonStars className="mx-4 my-1" size={20}/>}</li>
+            <li className="flex items-center px-3 cursor-pointer mx-2 hover:rounded-full" id={mode?"primaryn_dark":"primaryn_light"} onClick={top}>
               <AiOutlineHome className="mx-2" />
               Home
             </li>
@@ -79,7 +79,7 @@ export default function Navbar() {
           
             
           >
-            <li className="flex items-center px-3 cursor-default mx-2 hover:rounded-full" id={mode?"primaryn_dark":"primaryn_light"}>
+            <li className="flex items-center px-3 cursor-pointer mx-2 hover:rounded-full" id={mode?"primaryn_dark":"primaryn_light"}>
              <MdOutlineWorkOutline className="mx-2" size={20}/> Projects
             </li>
           </Link>
@@ -91,7 +91,7 @@ export default function Navbar() {
             duration={500}
           
           >
-            <li className="flex items-center cursor-default px-3 mx-2 hover:rounded-full" id={mode?"primaryn_dark":"primaryn_light"}>
+            <li className="flex items-center cursor-pointer px-3 mx-2 hover:rounded-full" id={mode?"primaryn_dark":"primaryn_light"}>
               <BiMessageDots className="mx-2" /> About
             </li>
           </Link>
@@ -103,14 +103,14 @@ export default function Navbar() {
             duration={500}
            
           >
-            <li className="flex items-center px-3 cursor-default mx-2 hover:rounded-full" id={mode?"primaryn_dark":"primaryn_light"}>
+            <li className="flex items-center px-3 cursor-pointer mx-2 hover:rounded-full" id={mode?"primaryn_dark":"primaryn_light"}>
               <AiOutlineContacts className="mx-2" />
               Contact
             </li>
           </Link>
         </ul>
       </nav>
-      <button className="md:hidden mx-3 " id={mode?"icons_dark":"icon_light"} onClick={theme}>{mode?<BsSun className="mx-4 my-1" size={20}/>:<BsMoonStars className="mx-4 my-1" size={20}/>}</button>
+      <button className="md:hidden mx-3 cursor-pointer" id={mode?"icons_dark":"icon_light"} onClick={theme}>{mode?<BsSun className="mx-4 my-1" size={20}/>:<BsMoonStars className="mx-4 my-1" size={20}/>}</button>
       
       <div onClick={handleNav} className="block md:hidden"id={mode?"icons_dark":"prima_light"}>
      
@@ -124,7 +124,7 @@ export default function Navbar() {
             : "md:hidden fixed left-0 top-0 w-[60%] min-h-screen text-white bg-slate-900 ease-in-out duration-500"
         } id={mode?"primary_dark":"primarys_light"}
       >
-        <ul className="">
+        <ul className="cursor-pointer">
           <Link to="main">
             <p className="text-2xl my-8 mx-8 flex items-center ">
               {" "}
