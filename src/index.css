@@ -99,14 +99,21 @@
     background-color: #121212;
     
   }
-  #primaryn_light:active{
-    color: #fff;
-    background-color: #121212;
-    
-  }
+ 
 
 
 #icons_light{
   color: rgba(0,0,0,0.54);
 }
-
+.nowactiveLight.active{
+  display: flex;
+  color: #fff;
+  background-color: #121212;
+  align-items: center;
+  padding-left: 12px ;
+    padding-right:  12px ;
+    cursor: pointer;
+    margin-left:  8px ;
+    margin-right:  8px ;
+    border-radius: 9999px;
+}

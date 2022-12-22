@@ -1,47 +1,96 @@
 import React from "react";
-import { BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs";
-import { AiOutlineMail } from "react-icons/ai";
+import { BsLinkedin, BsGithub, BsCodeSlash } from "react-icons/bs";
+import { Link } from "react-scroll";
+
 import { useMode } from "./Context/ThemeContext";
 export default function Footer() {
-  const mode=useMode()
+  const mode = useMode();
   return (
-    <div>
-      
-      <div className=" w-full grid grid-cols-2 justify-between">
-        <div className="text-center">
-          <p className="m-2">&lt;A.K&gt;</p>
-        
+    <footer class="p-4  sm:p-6 ">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0 flex ">
+          <span id={mode ? "second_dark" : "second_light"}>
+            <BsCodeSlash className="mr-3" size={35} />
+          </span>
+          <span class=" text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
         </div>
-       
-        <div className="text-center">
-          <div className="flex justify-center"id={mode?"icons_dark":"primar_light"}>
-            <span className="m-2">
-              <a
-                href="https://www.linkedin.com/in/asfaque-khan-359b39186/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BEyfAlF%2B9RT2r9WAgMf2C4Q%3D%3D"
-                className="flex items-center " target="_blank" rel="noopener noreferrer"
-              ><BsLinkedin className="" size={20} />
-                
-              </a>
-            </span>
-            <span className="m-2">
-              <a
-                href="https://github.com/Asfaquekhan"
-                className="flex items-center" target="_blank" rel="noopener noreferrer"
-              ><BsGithub className="" size={20} />
-                
-              </a>
-            </span>
-            <span className="m-2">
-              <AiOutlineMail size={20} />
-            </span>
-            <span className="m-2">
-              <BsWhatsapp size={20} />
-            </span>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              Toggle
+            </h2>
+            <ul class="text-gray-600 dark:text-gray-400 cursor-pointer">
+              <Link
+                to="project"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                <li class="mb-4">Projects</li>
+              </Link>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <li>About</li>
+              </Link>
+            </ul>
           </div>
-         
+          <div>
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              Links
+            </h2>
+            <ul className="text-gray-600 dark:text-gray-400">
+              <li class="mb-4">
+                <a
+                  href="https://github.com/Asfaquekhan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:underline flex items-center "
+                >
+                  {" "}
+                  <BsGithub className="mr-3" />
+                  Github
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/asfaque-khan-359b39186/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BEyfAlF%2B9RT2r9WAgMf2C4Q%3D%3D"
+                  class="hover:underline flex items-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <BsLinkedin className="mr-3" />
+                  Linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              Resume
+            </h2>
+            <ul class="text-gray-600 dark:text-gray-400">
+              <li class="mb-4">
+                <a href="/" class="hover:underline">
+                  Download
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <p className="text-center p-3"id={mode?"second_dark":"primary_light"}>&#169;copyright 2022 by Asfaque khan</p>
-    </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="text-center">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          © 2022 All Rights Reserved
+          <span className="ml-3">By Asfaque khan</span>
+        </span>
+      </div>
+    </footer>
   );
 }

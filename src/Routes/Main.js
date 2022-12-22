@@ -18,7 +18,7 @@ export default function Main(props) {
           <h1 className="text-2xl m-3  " id={mode?"primary_dark":"primary_light"}>Hi I'm Asfaque</h1>
           <p className="text-4xl m-3 flex " id={mode?"primary_dark":"primary_light"}>Frontend Web Devloper</p>
           <p className="my-10 m-3"   id={mode?"second_dark":"second_light"}>
-            A self taught frontend web devloper with a passion for making beautiful, responsive web
+            A self taught frontend web devloper with a passion for making beautiful and responsive web
             applications.
           </p>
           <div className="m-3
