@@ -46,7 +46,7 @@ export default function DataProject(props) {
       id: 3,
       live: "https://cryptosquare1.netlify.app/",
       github: "https://github.com/Asfaquekhan/Crypto_project",
-      text: "web app providing various informations about crypto currencies .Also react curd operations ",
+      text: "web app providing various informations about crypto currencies with individual coin page ",
       image:
         "https://images.pexels.com/photos/6771740/pexels-photo-6771740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       skills: [
@@ -70,13 +70,13 @@ export default function DataProject(props) {
       </h1>
 
       <div
-        className="md:grid grid-cols-2"
+        className="md:grid grid-cols-2 gap-4 "
         id={mode ? "primary_dark" : "primary_light"}
       >
         {Projects &&
           Projects.map((curr) => {
             return (
-              <div key={curr.id}>
+              <div key={curr.id} className="">
                 <section className="">
                   <h2
                     className="text-center p-2 m-2 text-xl font-bold "
@@ -85,12 +85,12 @@ export default function DataProject(props) {
                     {curr.name}
                   </h2>
                   <div className="">
-                    <div>
+                    <div className="">
                       <img
                         src={curr.image}
                         alt=""
                         width={320}
-                        className="mx-auto rounded-3xl"
+                        className="mx-auto rounded-3xl "
                       />
                     </div>
                     <div>

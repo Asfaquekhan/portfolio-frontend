@@ -27,7 +27,7 @@ export default function Footer() {
                 offset={-50}
                 duration={500}
               >
-                <li class="mb-4">Projects</li>
+                <li class="mb-4 hover:underline">Projects</li>
               </Link>
               <Link
                 to="about"
@@ -36,7 +36,7 @@ export default function Footer() {
                 offset={-70}
                 duration={500}
               >
-                <li>About</li>
+                <li className="hover:underline">About</li>
               </Link>
             </ul>
           </div>

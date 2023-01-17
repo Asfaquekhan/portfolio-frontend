@@ -90,6 +90,7 @@ export default function Contact() {
  <div><span className="float-right"><AiOutlineCloseCircle size={20} onClick={()=>setalert(false)}/></span></div>
  <div> <span className="font-medium">Email Send!</span> Thanks for connecting </div>
 </div>
+<br />
     </section>
   );
 }

@@ -28,7 +28,13 @@ export default function About(props) {
         
           
 <p className="mb-3 font-light text-gray-500 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-4xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left">  Hi,<span>{setgreet}!</span> Hope you having a great day...</p>
-<p className="font-light text-gray-500 dark:text-gray-400">My name is Asfaque khan.I am passonate about technology</p>
+<br />
+<ul className="list-disc">
+<li className="font-light text-gray-500 dark:text-gray-400">My name is Asfaque khan & i enjoy creating things that live on the internet. i'm a passionate developer, with strong administrative & communication skills, good attention to details. my aim is to write efficient code with responsive design.</li>
+<br />
+<li className="font-light text-gray-500 dark:text-gray-400">Currently my main goal is to learn new technologies & expand my knowledge </li>
+</ul>
+
 
         </div>
       </div>
