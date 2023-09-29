@@ -13,6 +13,22 @@ export default function DataProject(props) {
   const Projects = [
     {
       id: 1,
+      live: "https://recipecompiler.netlify.app/",
+      github: "https://github.com/Asfaquekhan/Frontend_FoodRecipes",
+      text: "A Food Recipe Webapp",
+      image:
+        "https://www.edigitalagency.com.au/wp-content/uploads/Netflix-logo-red-black-png.png",
+      skills: [
+        { skill: "React", icon: <FaReact /> },
+        { skill: "Tailwind", icon: <SiTailwindcss /> },
+        { skill: "Firebase", icon: <SiFirebase /> },
+
+        { skill: "Rest API", icon: <VscJson /> },
+      ],
+      name: "Recipe Compiler",
+    },
+    {
+      id: 2,
       live: "https://netflix-clone790.netlify.app/",
       github: "https://github.com/Asfaquekhan/netflix-clone",
       text: "A Netflix clone with Firebase backend",
@@ -28,7 +44,7 @@ export default function DataProject(props) {
       name: "Netflix Clone",
     },
     {
-      id: 2,
+      id: 3,
       live: "https://kanban.netlify.app/",
       github: "https://github.com/Asfaquekhan/Kanban_project",
       text: "Kanban Board with drag and drop feature.",
@@ -43,7 +59,7 @@ export default function DataProject(props) {
       name: "Kanban Board",
     },
     {
-      id: 3,
+      id: 4,
       live: "https://cryptosquare1.netlify.app/",
       github: "https://github.com/Asfaquekhan/Crypto_project",
       text: "web app providing various informations about crypto currencies with individual coin page ",

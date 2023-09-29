@@ -117,3 +117,30 @@
     margin-right:  8px ;
     border-radius: 9999px;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+ ::-webkit-scrollbar-track {
+  background: black;
+}
+
+
+.dark ::-webkit-scrollbar-track {
+  background: #333333;
+}
+
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
