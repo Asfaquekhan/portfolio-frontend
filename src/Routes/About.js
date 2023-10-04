@@ -16,7 +16,7 @@ export default function About(props) {
   return (
     <div className="h-screen m-3 py-16" id="about">
       <h1
-        className="mb-4 text-4xl tracking-tight  text-center"
+        className="mb-4  tracking-tight  text-center p-3 m-3 text-4xl font-extrabold dark:text-white underline underline-offset-3 decoration-8  dark:decoration-blue-600  leading-none  text-gray-900 md:text-5xl lg:text-6xl "
         id={mode ? "primary_dark" : "primary_light"}
       >
         About me

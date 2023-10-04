@@ -13,7 +13,7 @@ export default function Main(props) {
   return (
     <>
       <div
-        className="md:flex max-w-[950px]  mx-auto justify-between my-11 "
+        className="md:flex max-w-[1250px]  mx-auto justify-between my-11 p-3"
         id="main"
       >
         <div
@@ -22,57 +22,66 @@ export default function Main(props) {
           data-aos-duration="1000"
         >
           <h1
-            className="text-2xl m-3  "
+            className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white "
             id={mode ? "primary_dark" : "primary_light"}
           >
-            Hi I'm Asfaque
+            Hi <span className="">👋</span> I'm Asfaque
           </h1>
           <p
-            className="text-4xl m-3 flex "
+            className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white "
             id={mode ? "primary_dark" : "primary_light"}
           >
-            Frontend Web Devloper
+            <span class="text-blue-600 dark:text-blue-500">
+              Frontend Web Devloper
+            </span>
           </p>
-          <p className="my-10 m-3" id={mode ? "second_dark" : "second_light"}>
-            A self taught frontend web devloper with a passion for making
-            beautiful and responsive web apps.
+          <p
+            className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+            id={mode ? "second_dark" : "second_light"}
+          >
+            Frontend web developer with a passion for creating responsive and
+            high-performance websites. In a digital world where user experience
+            is paramount, I specialize in crafting seamless and visually
+            engaging interfaces that adapt flawlessly to any device. With a keen
+            eye for design and a dedication to optimizing performance, I'm here
+            to transform your online vision into a reality.
           </p>
           <div
             className="m-3
            "
             id={mode ? "second_dark" : "second_light"}
           >
-            <ul className="grid grid-cols-2">
-              <li className="flex items-center p-2">
+            <ul className="grid grid-cols-2 gap-5 ">
+              <li className="flex items-center text-xl font-bold ">
                 <IoLogoHtml5 className="mr-2" size={20} />
                 Html
               </li>
-              <li className="flex items-center p-2">
+              <li className="flex items-center text-xl font-bold ">
                 <DiCss3 className="mr-2" size={20} />
                 Css
               </li>
-              <li className="flex items-center p-2">
+              <li className="flex items-center text-xl font-bold ">
                 {" "}
                 <SiTailwindcss className="mr-2" size={20} />
                 Tailwind
               </li>
-              <li className="flex items-center p-2">
+              <li className="flex items-center text-xl font-bold ">
                 <IoLogoJavascript className="mr-2" size={20} />
                 Javascript
               </li>
-              <li className="flex items-center p-2">
+              <li className="flex items-center text-xl font-bold">
                 {" "}
                 <IoLogoReact className="mr-2" size={20} />
                 React
               </li>
-              <li className="flex items-center p-2">
+              <li className="flex items-center text-xl font-bold">
                 <SiRedux className="mr-2" size={20} />
                 Redux
               </li>
             </ul>
           </div>
 
-          <div className="flex m-3 space-x-7 my-11">
+          <div className="flex m-3 space-x-7 my-11 ">
             <Link
               to="contact"
               spy={true}
@@ -102,15 +111,15 @@ export default function Main(props) {
           </div>
         </div>
         <div
-          className="md:my-16 h-96 "
+          className="md:my-16 h-96 min-h-screen"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
           <img
-            src=".\Images\IMG_20221013_181332.jpg"
+            src=".\Images\me.png"
             alt=""
-            width={240}
-            className="rounded-full border-2 border-slate-900 mx-auto"
+            width={500}
+            className="rounded-full border  border-slate-900 mx-auto"
           />
           <div className="flex my-5 space-x-7 justify-center">
             <a

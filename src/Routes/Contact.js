@@ -3,9 +3,10 @@ import emailjs from "@emailjs/browser";
 import { useState } from "react";
 
 import {AiOutlineCloseCircle } from "react-icons/ai";
-
+import { useMode } from "../component/Context/ThemeContext";
 
 export default function Contact() {
+  const mode = useMode();
   const [alert,setalert]=useState(false)
  
   const form = useRef();
@@ -34,9 +35,12 @@ export default function Contact() {
   return (
     <section className="" id="contact">
       <div className={alert?"hidden":"py-8 lg:py-16 px-4 mx-auto max-w-screen-md"}>
-        <h2 className="mb-4 text-4xl tracking-tight  text-center text-gray-900 dark:text-white">
-          Contact("Hire me")
-        </h2>
+      <h1
+        className="mb-4  tracking-tight  text-center p-3 m-3 text-4xl font-extrabold dark:text-white underline underline-offset-3 decoration-8  dark:decoration-blue-600  leading-none  text-gray-900 md:text-5xl lg:text-6xl "
+        id={mode ? "primary_dark" : "primary_light"}
+      >
+      Contact("Hire me")
+      </h1>
         <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
          Email - Asfaquekhan15@gmail.com
         </p>
