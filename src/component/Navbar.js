@@ -38,24 +38,42 @@ export default function Navbar() {
 
   const mode = useMode();
   const theme = useFun();
-  
+
+  const SideNavStyle =
+    "flex cursor-default items-center p-2 m-7 border-b-2 hover:rounded-full text-xl font-bold link link-underline link-underline-black ";
+  const SideNavStyleActive =
+    " flex cursor-default items-center p-2 m-7 border-b-2 rounded-full text-xl font-bold bg-white text-black ";
+  const navbarStyleActiveDark =
+    "cursor-default items-center text-xl font-bold  rounded-full   bg-blue-600 text-white";
+  const navbarStyleLight =
+    "flex items-center px-3 cursor-pointer mx-2 hover:rounded-full text-xl font-bold  link link-underline link-underline-black  ";
+
+  const navbarStyleActiveLight =
+    "cursor-default items-center text-xl font-bold  rounded-full bg-blue-600 text-white ";
+  const navbarStyleDark =
+    "flex items-center px-3 cursor-pointer mx-2 hover:rounded-full text-xl font-bold text-white link link-underline link-underline-black";
 
   return (
     <div
       id="navbar"
       className={
         !color
-          ? "sticky top-0 flex h-12 max-w-screen mx-auto justify-between items-center z-40 backdrop-blur transition-colors duration-500 opacity-95 shadow-2xl p-3"
-          : "sticky top-0 flex h-12 max-w-screen mx-auto justify-between items-center z-40 backdrop-blur transition-colors duration-500 opacity-95 shadow-xl p-3"
+          ? "sticky top-0 flex h-14 max-w-screen mx-auto justify-between items-center z-40 backdrop-blur transition-colors duration-500 opacity-95 shadow-2xl p-5"
+          : "sticky top-0 flex h-14 max-w-screen mx-auto justify-between items-center z-40 backdrop-blur transition-colors duration-500 opacity-95 shadow-xl p-5"
       }
     >
       <div
         id={mode ? "primary_dark" : "primary_light"}
         className="cursor-pointer"
       >
-        <ul className="flex">
+        <ul className="">
           <Link to="main" spy={true} smooth={true} offset={50} duration={500}>
-            <li className="text-2xl">&lt;A.K&gt;</li>
+          <img
+            src=".\Images\me.png"
+            alt=""
+            width={50}
+            className="rounded-full border  border-slate-900 mx-auto items-center"
+          />
           </Link>
         </ul>
       </div>
@@ -67,9 +85,9 @@ export default function Navbar() {
             onClick={theme}
           >
             {mode ? (
-              <BsSun className="mx-4 my-1" size={20} />
+              <BsSun className="mx-4 my-1" size={25} />
             ) : (
-              <BsMoonStars className="mx-4 my-1" size={20} />
+              <BsMoonStars className="mx-4 my-1" size={25} />
             )}
           </li>
           <Link
@@ -78,11 +96,12 @@ export default function Navbar() {
             duration={500}
             spy={true}
             smooth={true}
-            className="flex items-center px-3 cursor-pointer mx-2 hover:rounded-full"
-            id={mode ? "primaryn_dark" : "primaryn_light"}
+            className={mode ? navbarStyleDark : navbarStyleLight}
+            activeClass={mode ? navbarStyleActiveLight : navbarStyleActiveDark}
+           
             onClick={top}
           >
-            <AiOutlineHome className="mx-2" />
+            <AiOutlineHome className="mx-2" size={25} />
             Home
           </Link>
 
@@ -92,36 +111,35 @@ export default function Navbar() {
             smooth={true}
             offset={-50}
             duration={500}
+            className={mode ? navbarStyleDark : navbarStyleLight}
+            activeClass={mode ? navbarStyleActiveLight : navbarStyleActiveDark}
+           
           >
-            <li
-              className="flex items-center px-3 cursor-pointer mx-2 hover:rounded-full"
-              id={mode ? "primaryn_dark" : "primaryn_light"}
-            >
-              <MdOutlineWorkOutline className="mx-2" size={20} /> Projects
-            </li>
+            <MdOutlineWorkOutline className="mx-2" size={25} /> Projects
           </Link>
-          <Link to="about" spy={true} smooth={true} offset={-70} duration={500}>
-            <li
-              className="flex items-center cursor-pointer px-3 mx-2 hover:rounded-full"
-              id={mode ? "primaryn_dark" : "primaryn_light"}
-            >
-              <BiMessageDots className="mx-2" /> About
-            </li>
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-30}
+            duration={500}
+            className={mode ? navbarStyleDark : navbarStyleLight}
+            activeClass={mode ? navbarStyleActiveLight : navbarStyleActiveDark}
+          >
+            <BiMessageDots className="mx-2" size={25} /> About
           </Link>
           <Link
             to="contact"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-10}
             duration={500}
-            activeClass="flex items-center px-3 cursor-pointer mx-2 hover:rounded-full "
-            className="flex items-center px-3 cursor-pointer mx-2 hover:rounded-full"
-              id={mode ? "primaryn_dark" : "primaryn_light"}
-          >
-          
-              <AiOutlineContacts className="mx-2" />
-              Contact
+            className={mode ? navbarStyleDark : navbarStyleLight}
+            activeClass={mode ? navbarStyleActiveLight : navbarStyleActiveDark}
            
+          >
+            <AiOutlineContacts className="mx-2" size={25} />
+            Contact
           </Link>
         </ul>
       </nav>
@@ -152,12 +170,16 @@ export default function Navbar() {
         }
         id={mode ? "primary_dark" : "primarys_light"}
       >
-        <ul className="cursor-pointer">
+        <ul className="cursor-pointer space-y-16">
           <Link to="main">
             <p className="text-2xl my-8 mx-8 flex items-center ">
-              {" "}
-              &lt;A.K&gt;
-            </p>
+            <img
+            src=".\Images\me.png"
+            alt=""
+            width={50}
+            className="rounded-full border  border-slate-900 mx-auto items-center"
+          />
+          </p>
           </Link>
           <Link
             to="main"
@@ -165,8 +187,8 @@ export default function Navbar() {
             smooth={true}
             offset={-1000}
             duration={500}
-            activeClass="flex cursor-default items-center p-2 m-7 border-b-2 rounded-full text-lg bg-white text-black "
-            className="flex cursor-default items-center p-2 m-7 border-b-2 hover:rounded-full  hover:text-lg hover:bg-white hover:text-black"
+            activeClass={SideNavStyleActive}
+            className={SideNavStyle}
           >
             <AiOutlineHome className="mx-2" size={20} />
             Home
@@ -177,8 +199,8 @@ export default function Navbar() {
             smooth={true}
             offset={-50}
             duration={500}
-            activeClass="flex cursor-default items-center p-2 m-7 border-b-2 rounded-full text-lg bg-white text-black "
-            className="flex cursor-default items-center p-2 m-7 border-b-2 hover:rounded-full  hover:text-lg hover:bg-white hover:text-black"
+            activeClass={SideNavStyleActive}
+            className={SideNavStyle}
           >
             <MdOutlineWorkOutline className="mx-2" size={20} />
             Projects
@@ -190,8 +212,8 @@ export default function Navbar() {
             smooth={true}
             offset={-70}
             duration={500}
-            activeClass="flex cursor-default items-center p-2 m-7 border-b-2 rounded-full text-lg bg-white text-black "
-            className="flex cursor-default items-center p-2 m-7 border-b-2 hover:rounded-full  hover:text-lg hover:bg-white hover:text-black"
+            activeClass={SideNavStyleActive}
+            className={SideNavStyle}
           >
             <BiMessageDots className="mx-2" size={20} /> About
           </Link>
@@ -201,8 +223,8 @@ export default function Navbar() {
             smooth={true}
             offset={-70}
             duration={500}
-            activeClass=" flex cursor-default items-center p-2 m-7 border-b-2 rounded-full text-lg bg-white text-black "
-            className="flex cursor-default items-center p-2 m-7 border-b-2 hover:border-b-0  hover:text-lg "
+            activeClass={SideNavStyleActive}
+            className={SideNavStyle}
           >
             <AiOutlineContacts className="mx-2" size={20} />
             Contact

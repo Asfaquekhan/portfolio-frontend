@@ -22,7 +22,7 @@ export default function Redirect() {
         })
     }
   return (
-    <div className={mode?'fixed bottom-4 right-4 rounded-full bg-blue-600 text-white ease-in-out':'fixed bottom-4 right-4 rounded-full bg-black text-white ease-in-out'}>
+    <div className={mode?'fixed bottom-4 right-4 rounded-full bg-blue-600 text-white ease-in-out md:right-12':'fixed bottom-4 right-4 rounded-full bg-black text-white ease-in-out md:right-12'}>
         {backtotop &&(<button className=' py-2 px-2' onClick={scrollup}><AiOutlineArrowUp size={20}/></button>)}
     </div>
   )
