@@ -2,11 +2,11 @@ import React from "react";
 import { AiOutlineLink, AiFillGithub } from "react-icons/ai";
 import { SiTailwindcss } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
-import { SiRedux, SiMaterialui, SiFirebase } from "react-icons/si";
-import { VscJson } from "react-icons/vsc";
+import { SiRedux, SiMaterialui, SiFirebase,SiExpress } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
 import { GiChart } from "react-icons/gi";
+import {DiMongodb } from "react-icons/di"
 import { useMode } from "./Context/ThemeContext";
-import { useState } from "react";
 
 export default function DataProject(props) {
   const mode = useMode();
@@ -16,14 +16,14 @@ export default function DataProject(props) {
       id: 1,
       live: "https://recipecompiler.netlify.app/",
       github: "https://github.com/Asfaquekhan/Frontend_FoodRecipes",
-      text: "A Food Recipe Webapp",
-      image: "https://youtu.be/do957lxzVs0?si=x2EnkcDIUSor6lGh",
+      text: " web app is built using the MERN (MongoDB, Express.js, React, Node.js) stack and provides access to an extensive collection of over 6000+ food recipes. Users can engage with the app to explore, search for, and access detailed information on a wide range of recipes. Additionally, the app offers a feature that allows users to mark their favorite recipes for easy access and reference.",
+      image: "https://drive.google.com/uc?export=download&id=1vYcvGmoSbBXOs6qnY1hqBJ7rVQqsvHnK",
       skills: [
-        { skill: "React", icon: <FaReact /> },
-        { skill: "Tailwind", icon: <SiTailwindcss /> },
-        { skill: "Firebase", icon: <SiFirebase /> },
-
-        { skill: "Rest API", icon: <VscJson /> },
+        { skill: "React", icon: <FaReact size={20}/> },
+        { skill: "Tailwind", icon: <SiTailwindcss size={20}/> },
+        { skill: "Node.js", icon: <FaNodeJs size={20}/> },
+        { skill: "Express.js", icon: <SiExpress size={20}/> },
+        { skill: "MongoDB", icon: <DiMongodb size={20}/> },
       ],
       name: "Recipe Compiler",
     },
@@ -34,57 +34,36 @@ export default function DataProject(props) {
       text: "A Netflix clone with Firebase backend",
       image: "https://www.youtube.com/embed/do957lxzVs0?si=ieCzT5kuIbbUfXRr",
       skills: [
-        { skill: "React", icon: <FaReact /> },
-        { skill: "Tailwind", icon: <SiTailwindcss /> },
-        { skill: "Firebase", icon: <SiFirebase /> },
+        { skill: "React", icon: <FaReact size={20}/> },
+        { skill: "Tailwind", icon: <SiTailwindcss size={20}/> },
+        { skill: "Firebase", icon: <SiFirebase size={20}/> },
 
-        { skill: "Rest API", icon: <VscJson /> },
+       
       ],
       name: "Netflix Clone",
     },
-    {
-      id: 3,
-      live: "https://kanban.netlify.app/",
-      github: "https://github.com/Asfaquekhan/Kanban_project",
-      text: "Kanban Board with drag and drop feature.",
-      image: "https://www.youtube.com/embed/do957lxzVs0?si=ieCzT5kuIbbUfXRr",
-      skills: [
-        { skill: "React", icon: <FaReact /> },
-        { skill: "Tailwind", icon: <SiTailwindcss /> },
-        { skill: "React", icon: <FaReact /> },
-        { skill: "React", icon: <FaReact /> },
-      ],
-      name: "Kanban Board",
-    },
+   
     {
       id: 4,
       live: "https://cryptosquare1.netlify.app/",
       github: "https://github.com/Asfaquekhan/Crypto_project",
       text: "web app providing various informations about crypto currencies with individual coin page ",
-      image: "https://www.youtube.com/embed/do957lxzVs0?si=ieCzT5kuIbbUfXRr",
+      image: 'https://drive.google.com/uc?export=download&id=1PSRs31FQA5t_Rd_JhzTFn7LG41WFl2FV',
       skills: [
-        { skill: "React", icon: <FaReact /> },
-        { skill: "Redux", icon: <SiRedux /> },
-        { skill: "Material UI", icon: <SiMaterialui /> },
-        { skill: "Chart.js", icon: <GiChart /> },
-        { skill: "Rest API", icon: <VscJson /> },
+        { skill: "React", icon: <FaReact size={20}/> },
+        { skill: "Redux", icon: <SiRedux size={20}/> },
+        { skill: "Material UI", icon: <SiMaterialui size={20}/> },
+        { skill: "Chart.js", icon: <GiChart size={20} /> },
+       
       ],
       name: "CryptoSquare",
     },
   ];
-  const [isHovered, setIsHovered] = useState(false);
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
   return (
     <div id="project" className="max-w-[1500px] mx-auto">
       <h1
-        className="mb-4  tracking-tight  text-center p-3 m-3 text-4xl font-extrabold dark:text-white underline underline-offset-3 decoration-8  dark:decoration-blue-600  leading-none  text-gray-900 md:text-5xl lg:text-6xl "
+        className="mb-4  tracking-tight  text-center p-3 m-3 text-4xl font-extrabold dark:text-white underline underline-offset-3 decoration-8  decoration-blue-600  leading-none  text-gray-900 md:text-5xl lg:text-6xl "
         id={mode ? "primary_dark" : "primary_light"}
       >
         Projects
@@ -107,32 +86,14 @@ export default function DataProject(props) {
                   </h2>
                   <div className="">
                     <div className=" flex justify-center">
-                      <div
-                        onMouseEnter={handleMouseEnter}
-                        onMouseLeave={handleMouseLeave}
-                        style={{ position: "relative" }}
-                      >
-                        {isHovered ? (
-                          <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/do957lxzVs0?si=x2EnkcDIUSor6lGh&mute=1&autoplay=1&showinfo=0"
-                            title="YouTube video player"
-                            className="rounded-2xl"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullscreen
-                          ></iframe>
-                        ) : (
-                          <img
-                            src={
-                              "https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80"
-                            }
-                            alt="Video Thumbnail"
-                            width="300"
-                            height="200"
-                          />
-                        )}
-                      </div>
+                      <img
+                        src={
+                         curr.image
+                        }
+                        alt="Food Recipe Project"
+                        className="rounded-xl"
+                        height={1280}
+                      />
                     </div>
                     <div>
                       <article
@@ -142,13 +103,12 @@ export default function DataProject(props) {
                         {curr.text}
                       </article>
                       <div id={mode ? "second_dark" : "second_light"}>
-                        <div className="flex flex-wrap justify-around md:w-3/4 mx-auto ">
-                          {curr.skills.map((value) => {
+                        <div className="flex flex-wrap gap-3 justify-around md:w-3/4 mx-auto p-2 ">
+                          {curr.skills.map((value,index) => {
                             return (
-                              <button className="flex  items-center p-2 m-1">
-                                {value.icon}
-                                <p className="ml-3">{value.skill}</p>
-                              </button>
+                             <p key={index} className="flex items-center text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+                            <span className="mr-2">{value.icon}</span>   {value.skill}
+                            </p>
                             );
                           })}
                         </div>

@@ -36,7 +36,7 @@ export default function Contact() {
     <section className="" id="contact">
       <div className={alert?"hidden":"py-8 lg:py-16 px-4 mx-auto max-w-screen-md"}>
       <h1
-        className="mb-4  tracking-tight  text-center p-3 m-3 text-4xl font-extrabold dark:text-white underline underline-offset-3 decoration-8  dark:decoration-blue-600  leading-none  text-gray-900 md:text-5xl lg:text-6xl "
+        className="mb-4  tracking-tight  text-center p-3 m-3 text-4xl font-extrabold dark:text-white underline underline-offset-3 decoration-8  decoration-blue-600  leading-none  text-gray-900 md:text-5xl lg:text-6xl "
         id={mode ? "primary_dark" : "primary_light"}
       >
       Contact me
