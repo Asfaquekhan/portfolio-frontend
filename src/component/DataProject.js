@@ -16,7 +16,7 @@ export default function DataProject(props) {
       id: 1,
       live: "https://recipecompiler.netlify.app/",
       github: "https://github.com/Asfaquekhan/Frontend_FoodRecipes",
-      text: " web app is built using the MERN (MongoDB, Express.js, React, Node.js) stack and provides access to an extensive collection of over 6000+ food recipes. Users can engage with the app to explore, search for, and access detailed information on a wide range of recipes. Additionally, the app offers a feature that allows users to mark their favorite recipes for easy access and reference.",
+      text: " built using the MERN stack and provides access to an extensive collection of over 6000+ food recipes. Users can engage with the app to explore, search for, and access detailed information on a wide range of recipes. Additionally, the app offers a feature that allows users to mark their favorite recipes for easy access and reference.",
       image: "https://drive.google.com/uc?export=download&id=1vYcvGmoSbBXOs6qnY1hqBJ7rVQqsvHnK",
       skills: [
         { skill: "React", icon: <FaReact size={20}/> },
@@ -61,7 +61,7 @@ export default function DataProject(props) {
   ];
 
   return (
-    <div id="project" className="max-w-[1500px] mx-auto">
+    <div id="project" className="max-w-[1500px] mx-auto mb-10">
       <h1
         className="mb-4  tracking-tight  text-center p-3 m-3 text-4xl font-extrabold dark:text-white underline underline-offset-3 decoration-8  decoration-blue-600  leading-none  text-gray-900 md:text-5xl lg:text-6xl "
         id={mode ? "primary_dark" : "primary_light"}
@@ -85,14 +85,14 @@ export default function DataProject(props) {
                     {curr.name}
                   </h2>
                   <div className="">
-                    <div className=" flex justify-center">
+                    <div className=" flex justify-center ">
                       <img
                         src={
                          curr.image
                         }
                         alt="Food Recipe Project"
-                        className="rounded-xl"
-                        height={1280}
+                        className="rounded-2xl w-3/4 md:w-11/12 p-5 hover:scale-110 transition-scale-110  duration-300 ease-in-out"
+                       
                       />
                     </div>
                     <div>

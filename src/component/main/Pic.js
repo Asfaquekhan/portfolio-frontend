@@ -5,7 +5,7 @@ function Pic() {
   return (
     <div className="sm:py-32 md:py-0" data-aos="fade-up" data-aos-duration="1000">
     <img
-      src=".\Images\me.png"
+      src=".\Images\me.webp"
       alt=""
       width={500}
       className="rounded-full border  border-slate-900 mx-auto items-center "

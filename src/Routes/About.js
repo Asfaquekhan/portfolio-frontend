@@ -14,7 +14,7 @@ export default function About(props) {
     setgreet = "Good Evening";
   }
   return (
-    <div className=" m-3 py-16" id="about">
+    <div className="min-h-screen m-3 py-5" id="about">
       <h1
         className="mb-4  tracking-tight  text-center p-3 m-3 text-4xl font-extrabold dark:text-white underline underline-offset-3 decoration-8 decoration-blue-600  leading-none  text-gray-900 md:text-5xl lg:text-6xl "
         id={mode ? "primary_dark" : "primary_light"}
@@ -54,24 +54,7 @@ export default function About(props) {
               believe that a well-designed website can make a significant
               difference in user engagement and satisfaction.{" "}
             </li>
-            <span className="font-semibold"> My Toolbox</span>
-            <li className="font-light text-gray-500 dark:text-gray-400 mb-4">
            
-               Here are some of the technologies and tools I'm
-              proficient in:
-              <ul className="grid grid-cols-3 gap-4 gap-4 font-semibold ">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript </li>
-                <li>React </li>
-                <li>Git/GitHub </li>
-
-                <li>Tailwind css </li>
-                <li>Redux </li>
-                <li>JavaScript </li>
-                </ul> 
-                 
-            </li>
            
             <li className="font-light text-gray-500 dark:text-gray-400">Let's Connect I'm always eager to collaborate on
               exciting projects, learn from others, and share my knowledge. If

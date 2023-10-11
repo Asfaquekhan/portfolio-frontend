@@ -69,7 +69,7 @@ export default function Navbar() {
         <ul className="">
           <Link to="main" spy={true} smooth={true} offset={50} duration={500}>
           <img
-            src=".\Images\me.png"
+            src=".\Images\me.webp"
             alt=""
             width={50}
             className="rounded-full border  border-slate-900 mx-auto items-center"
