@@ -15,7 +15,7 @@ export function useFun(){
 }
 
 const StateContext = ({ children }) => {
-  const [mode, setmode] = useState(false);
+  const [mode, setmode] = useState(true);
   const theme = () => {
     setmode(!mode);
   };
