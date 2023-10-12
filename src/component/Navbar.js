@@ -174,7 +174,7 @@ export default function Navbar() {
           <Link to="main">
             <p className="text-2xl my-8 mx-8 flex items-center ">
             <img
-            src=".\Images\me.png"
+            src=".\Images\me.webp"
             alt=""
             width={50}
             className="rounded-full border  border-slate-900 mx-auto items-center"

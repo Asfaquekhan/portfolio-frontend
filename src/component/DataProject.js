@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineLink, AiFillGithub } from "react-icons/ai";
 import { SiTailwindcss } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
-import { SiRedux, SiMaterialui, SiFirebase,SiExpress } from "react-icons/si";
+import { SiRedux, SiFirebase,SiExpress } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { GiChart } from "react-icons/gi";
 import {DiMongodb } from "react-icons/di"
@@ -52,7 +52,7 @@ export default function DataProject(props) {
       skills: [
         { skill: "React", icon: <FaReact size={20}/> },
         { skill: "Redux", icon: <SiRedux size={20}/> },
-        { skill: "Material UI", icon: <SiMaterialui size={20}/> },
+       
         { skill: "Chart.js", icon: <GiChart size={20} /> },
        
       ],

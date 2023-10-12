@@ -9,8 +9,9 @@ import Main from "./Routes/Main";
 
 import Redirect from "./component/Redirect";
 import {  useMode } from "./component/Context/ThemeContext";
-import DataProject from "./component/DataProject";
+
 import ContactNew from "./component/ContactNew";
+import ProjectList from "./component/projects/ProjectList";
 
 
 
@@ -25,10 +26,11 @@ function App(props) {
      <div className={!mode?"light":"dark"}>
         <Navbar />
         <Main />
-        <DataProject/>
+        <ProjectList/>
         <About />
         <ContactNew />
         <Footer />
+       
         <Redirect />
        
         </div>

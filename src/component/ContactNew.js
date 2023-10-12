@@ -85,7 +85,7 @@ const ContactNew = () => {
                 onChange={handleForm}
                 className=" focus:outline-none p-2 rounded-md border "
                 placeholder="First Name"
-                id={mode ? "primary_dark" : "primary_light"}
+               
                 required
               />
               <input
