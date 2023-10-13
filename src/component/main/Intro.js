@@ -20,7 +20,7 @@ function Intro() {
             className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white "
             id={mode ? "primary_dark" : "primary_light"}
           >
-            Hi <span className="">👋</span> I'm Asfaque
+            Hi <span className="" id='wave'>👋</span> I'm Asfaque
           </h1>
           <p
             className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white "

@@ -90,6 +90,7 @@ export default function Footer() {
           © 2022 All Rights Reserved
           <span className="ml-3">By Asfaque khan</span>
         </span>
+        
       </div>
     </footer>
   );

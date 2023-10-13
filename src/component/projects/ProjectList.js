@@ -7,13 +7,13 @@ import { FaNodeJs } from "react-icons/fa";
 import { useMode } from "../Context/ThemeContext";
 import { DiMongodb } from "react-icons/di";
 // eslint-disable-next-line
-import cooking from "./lottie/cooking.json";
+
 function ProjectList() {
   const mode = useMode();
   return (
     <div id="project" className="max-w-[1500px] mx-auto mb-10">
       <h1
-        className="mb-4  tracking-tight  text-center p-3 m-3 text-4xl font-extrabold dark:text-white underline underline-offset-3 decoration-8  decoration-blue-600  leading-none  text-gray-900 md:text-5xl lg:text-6xl "
+        className="mb-10 tracking-tight  text-center p-3 m-3 text-4xl font-extrabold dark:text-white underline underline-offset-3 decoration-8  decoration-blue-600  leading-none  text-gray-900 md:text-5xl lg:text-6xl "
         id={mode ? "primary_dark" : "primary_light"}
       >
         Projects
@@ -36,7 +36,7 @@ function ProjectList() {
             { skill: "Express.js", icon: <SiExpress size={20} /> },
             { skill: "MongoDB", icon: <DiMongodb size={20} /> },
           ]}
-          image={cooking}
+          image={"https://drive.google.com/uc?export=view&id=13gFHBvgodJDEJC-9ta2gVSOIbCqe4whM"}
           name={"Recipe Compiler"}
         />
         <ProjectCard />

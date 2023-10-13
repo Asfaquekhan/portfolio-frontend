@@ -1,7 +1,7 @@
 import React from "react";
 import { useMode } from "../Context/ThemeContext";
 import { AiOutlineLink, AiFillGithub } from "react-icons/ai";
-import Lottie from "lottie-react";
+
 
 // eslint-disable-next-line
 function ProjectCard({ name, image, details, stacks, live, github }) {
@@ -9,12 +9,21 @@ function ProjectCard({ name, image, details, stacks, live, github }) {
   return (
     <div>
       <section className="" id={mode ? "second_dark" : "second_light"}>
-        <div className="flex flex-col justify-center ">
-         
-        <Lottie animationData={image} style={{height:"320px",width:"100%"}}/>
-       
+        <div className="flex flex-col md:flex-row justify-center ">
+          <img
+            src={image}
+            alt="You"
+            loading="lazy"
+            decoding="async"
+        
+            className="rounded-full mx-auto"
+            width={220}
+          />
+
           <article className="text-center p-2 m-2">
-            <span className="text-blue-600 font-extrabold leading-none tracking-tight mr-2">{name}</span>
+            <span className="text-blue-600 font-extrabold leading-none tracking-tight mr-2">
+              {name}
+            </span>
             {details}
           </article>
         </div>

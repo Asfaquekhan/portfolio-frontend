@@ -7,7 +7,7 @@ import { BsSun, BsMoonStars } from "react-icons/bs";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { useState } from "react";
 
-import { useFun, useMode } from "./Context/ThemeContext";
+import { useFun, useMode } from "../Context/ThemeContext";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -68,12 +68,12 @@ export default function Navbar() {
       >
         <ul className="">
           <Link to="main" spy={true} smooth={true} offset={50} duration={500}>
-          <img
-            src=".\Images\me.webp"
-            alt=""
-            width={50}
-            className="rounded-full border  border-slate-900 mx-auto items-center"
-          />
+            <img
+               src="https://drive.google.com/uc?export=view&id=1ls38zp3b5Nc8VEQCrCQU0eb4yh-LCNGQ"
+               alt="Me"
+              width={50}
+              className="rounded-full border  border-slate-900 mx-auto items-center"
+            />
           </Link>
         </ul>
       </div>
@@ -85,9 +85,9 @@ export default function Navbar() {
             onClick={theme}
           >
             {mode ? (
-              <BsSun className="mx-4 my-1" size={25} />
-            ) : (
               <BsMoonStars className="mx-4 my-1" size={25} />
+            ) : (
+              <BsSun className="mx-4 my-1" size={25} />
             )}
           </li>
           <Link
@@ -98,7 +98,6 @@ export default function Navbar() {
             smooth={true}
             className={mode ? navbarStyleDark : navbarStyleLight}
             activeClass={mode ? navbarStyleActiveLight : navbarStyleActiveDark}
-           
             onClick={top}
           >
             <AiOutlineHome className="mx-2" size={25} />
@@ -113,7 +112,6 @@ export default function Navbar() {
             duration={500}
             className={mode ? navbarStyleDark : navbarStyleLight}
             activeClass={mode ? navbarStyleActiveLight : navbarStyleActiveDark}
-           
           >
             <MdOutlineWorkOutline className="mx-2" size={25} /> Projects
           </Link>
@@ -136,7 +134,6 @@ export default function Navbar() {
             duration={500}
             className={mode ? navbarStyleDark : navbarStyleLight}
             activeClass={mode ? navbarStyleActiveLight : navbarStyleActiveDark}
-           
           >
             <AiOutlineContacts className="mx-2" size={25} />
             Contact
@@ -149,9 +146,9 @@ export default function Navbar() {
         onClick={theme}
       >
         {mode ? (
-          <BsSun className="mx-4 my-1" size={20} />
+          <BsMoonStars className="mx-4 my-1" size={25} />
         ) : (
-          <BsMoonStars className="mx-4 my-1" size={20} />
+          <BsSun className="mx-4 my-1" size={25} />
         )}
       </button>
 
@@ -172,14 +169,16 @@ export default function Navbar() {
       >
         <ul className="cursor-pointer space-y-16">
           <Link to="main">
-            <p className="text-2xl my-8 mx-8 flex items-center ">
-            <img
-            src=".\Images\me.webp"
-            alt=""
-            width={50}
-            className="rounded-full border  border-slate-900 mx-auto items-center"
-          />
-          </p>
+           
+              <img
+                src="https://drive.google.com/uc?export=view&id=1ls38zp3b5Nc8VEQCrCQU0eb4yh-LCNGQ"
+                alt="Nav"
+                loading="lazy"
+                decoding="async"
+                width={50}
+                className="rounded-full border  border-slate-900 mx-auto items-center"
+              />
+          
           </Link>
           <Link
             to="main"
